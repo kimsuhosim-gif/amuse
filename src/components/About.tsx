@@ -72,22 +72,6 @@ export default function About() {
           ))}
         </div>
 
-        {/* Large Decorative Image Area */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="mt-32 relative aspect-[21/9] w-full overflow-hidden"
-        >
-          <Image
-            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000&auto=format&fit=crop"
-            alt="Amuse detail"
-            fill
-            className="object-cover object-center transition-transform duration-1000 group-hover:scale-105"
-            sizes="100vw"
-          />
-        </motion.div>
       </div>
     </section>
   );
