@@ -68,17 +68,30 @@ export default function Navbar() {
               KAKAO
             </a>
           </div>
-          <a
-            href="https://booking.naver.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`flex items-center justify-center rounded-none border px-6 py-2.5 text-[10px] uppercase tracking-[0.15em] transition-all duration-500 ${isScrolled
-              ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
-              : "border-white/40 text-white hover:bg-white hover:text-black"
-              }`}
-          >
-            예약 문의
-          </a>
+          <div className="flex gap-2">
+            <a
+              href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4/place/1785101854?placePath=/ticket?abtExp=PLACE-AD-REVIEWIMG:4&bk_query=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&entry=pll&from=nx&fromNxList=true&from=map&fromPanelNum=2&timestamp=202602271037&locale=ko&svcName=map_pcv5&searchText=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&bk_query=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&entry=pll&from=nx&fromNxList=true&fromPanelNum=2&timestamp=202602271037&locale=ko&svcName=map_pcv5&searchText=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&searchType=place&c=15.00,0,0,0,dh"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center justify-center rounded-none border px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] font-medium transition-all duration-500 ${isScrolled
+                ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+                : "border-white/40 text-white hover:bg-white hover:text-black"
+                }`}
+            >
+              안양 체험예약
+            </a>
+            <a
+              href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4/place/1242872971?c=15.00,0,0,0,dh&placePath=/ticket?bk_query=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&entry=bmp&from=map&fromPanelNum=2&timestamp=202602271047&locale=ko&svcName=map_pcv5&searchText=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center justify-center rounded-none border px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] font-medium transition-all duration-500 ${isScrolled
+                ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+                : "border-white/40 text-white hover:bg-white hover:text-black"
+                }`}
+            >
+              신림 체험예약
+            </a>
+          </div>
         </div>
       </nav>
     </motion.header>
