@@ -9,10 +9,19 @@ export default function Hero() {
     <section className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden" aria-label="메인 소개">
       {/* Background - Real high-res photo (4K), NOT AI generated */}
       <div className="absolute inset-0">
+        {/* Mobile Background */}
+        <img
+          src="/images/hero-mobile.jpeg"
+          alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가 (모바일)"
+          className="block h-full w-full object-cover object-center md:hidden"
+          loading="eager"
+          fetchPriority="high"
+        />
+        {/* Desktop Background */}
         <img
           src="/images/hero.jpeg"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가"
-          className="h-full w-full object-cover object-[15%_center] lg:object-center"
+          className="hidden h-full w-full object-cover object-center lg:object-center md:block" // Removed object-[15%_center] as now mobile has its own image and desktop should center normally.
           loading="eager"
           fetchPriority="high"
         />
