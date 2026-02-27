@@ -70,9 +70,14 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-light text-zinc-600">
-          <p>&copy; {new Date().getFullYear()} AMUSE Studio. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs font-light text-zinc-600">
+          <div className="flex flex-col gap-1">
+            <p>상호: 아뮤즈폴댄스&플라잉요가 | 대표자: 김서아</p>
+            <p>신림점: 서울특별시 관악구 신사로 116-1, 3층 (신림동)</p>
+            <p>안양점: 경기도 안양시 동안구 관악대로 103, 9층 907호 (비산동, 103에비뉴)</p>
+            <p className="mt-2 text-zinc-500">&copy; {new Date().getFullYear()} AMUSE Studio. All rights reserved.</p>
+          </div>
+          <div className="flex items-center gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
