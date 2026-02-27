@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden" aria-label="메인 소개">
+    <section className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden" aria-label="메인 소개">
       {/* Background - Real high-res photo (4K), NOT AI generated */}
       <div className="absolute inset-0">
         <img
@@ -20,13 +20,13 @@ export default function Hero() {
       </div>
 
       {/* Logo */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center -mt-10 md:mt-0 px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         >
-          <div className="relative w-[200px] h-[200px] md:w-[280px] md:h-[280px]"
+          <div className="relative w-[220px] h-[220px] md:w-[280px] md:h-[280px]"
             style={{ mixBlendMode: "screen" }}>
             <img
               src="/images/logo.jpg"
@@ -38,22 +38,22 @@ export default function Hero() {
       </div>
 
       {/* CTA Button */}
-      <div className="absolute inset-0 flex flex-col items-center justify-end pb-24 md:pb-32">
+      <div className="absolute inset-0 flex flex-col items-center justify-end pb-[140px] md:pb-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center gap-8"
+          className="flex flex-col items-center gap-8 w-full px-6"
         >
           <a
             href="https://booking.naver.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center gap-4 overflow-hidden rounded-full bg-white/10 backdrop-blur-md px-10 py-5 text-xs font-light tracking-[0.25em] text-white border border-white/20 transition-all duration-500 hover:bg-white hover:text-black"
+            className="group relative flex w-full max-w-[320px] md:max-w-none md:w-auto items-center justify-center gap-3 md:gap-4 overflow-hidden rounded-full bg-white/10 backdrop-blur-md px-6 py-4 md:px-10 md:py-5 text-[10px] md:text-xs font-light tracking-[0.2em] text-white border border-white/20 transition-all duration-500 hover:bg-white hover:text-black whitespace-nowrap"
             aria-label="네이버 예약"
           >
-            <span className="relative flex items-center uppercase">Experience Premium Class</span>
-            <MoveRight strokeWidth={1.5} size={18} className="relative transition-transform duration-500 group-hover:translate-x-2" />
+            <span className="relative flex items-center uppercase text-center w-full justify-center">Experience Premium Class</span>
+            <MoveRight strokeWidth={1.5} size={16} className="relative hidden md:block transition-transform duration-500 group-hover:translate-x-2" />
           </a>
         </motion.div>
       </div>
@@ -63,10 +63,10 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 1.5 }}
-        className="absolute bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
+        className="absolute bottom-[70px] md:bottom-6 left-1/2 flex -translate-x-1/2 flex-col items-center gap-3"
       >
-        <span className="text-[9px] uppercase tracking-[0.3em] text-white/50">Scroll to discover</span>
-        <div className="h-14 w-[1px] bg-white/20 overflow-hidden">
+        <span className="text-[10px] md:text-[9px] uppercase tracking-[0.3em] text-white/70 whitespace-nowrap">Scroll to discover</span>
+        <div className="h-10 md:h-14 w-[1px] bg-white/20 overflow-hidden">
           <motion.div
             animate={{ y: ["-100%", "200%"] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
