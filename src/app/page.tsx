@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
 import Studios from "@/components/Timetable";
+import Instructors from "@/components/Instructors";
 import Review from "@/components/Review";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Programs />
       <Studios />
+      <Instructors />
       <Review />
       <FAQ />
       <Footer />
@@ -32,7 +34,7 @@ export default function Home() {
             BOOK CLASS
           </a>
           <a
-            href="http://pf.kakao.com/_xnxnxn"
+            href="https://pf.kakao.com/_xdGyzxj"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="카카오톡 상담으로 이동"
