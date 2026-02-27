@@ -21,7 +21,7 @@ export default function Footer() {
               <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
                 Blog
               </a>
-              <a href="http://pf.kakao.com/_xnxnxn" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
+              <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
                 Kakao
               </a>
             </div>

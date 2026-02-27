@@ -64,7 +64,7 @@ export default function Navbar() {
             <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
               BLOG
             </a>
-            <a href="http://pf.kakao.com/_xnxnxn" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+            <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
               KAKAO
             </a>
           </div>
