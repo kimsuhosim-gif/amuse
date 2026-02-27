@@ -2,6 +2,7 @@
 
 // file: src/components/Navbar.tsx
 import Link from "next/link";
+import { Instagram } from "lucide-react";
 
 import { useState } from "react";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -55,17 +56,30 @@ export default function Navbar() {
           ))}
         </div>
 
-        <a
-          href="https://booking.naver.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`flex items-center justify-center rounded-none border px-6 py-2.5 text-[10px] uppercase tracking-[0.15em] transition-all duration-500 ${isScrolled
-            ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
-            : "border-white/40 text-white hover:bg-white hover:text-black"
-            }`}
-        >
-          예약 문의
-        </a>
+        <div className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-5 mr-2">
+            <a href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+              <Instagram size={16} strokeWidth={1.5} />
+            </a>
+            <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+              BLOG
+            </a>
+            <a href="http://pf.kakao.com/_xnxnxn" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+              KAKAO
+            </a>
+          </div>
+          <a
+            href="https://booking.naver.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center justify-center rounded-none border px-6 py-2.5 text-[10px] uppercase tracking-[0.15em] transition-all duration-500 ${isScrolled
+              ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
+              : "border-white/40 text-white hover:bg-white hover:text-black"
+              }`}
+          >
+            예약 문의
+          </a>
+        </div>
       </nav>
     </motion.header>
   );
