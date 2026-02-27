@@ -69,7 +69,7 @@ export default function Navbar() {
               KAKAO
             </a>
           </div>
-          <div className="flex gap-2">
+          <div className="hidden md:flex gap-2">
             <a
               href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4/place/1785101854?placePath=/ticket?abtExp=PLACE-AD-REVIEWIMG:4&bk_query=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&entry=pll&from=nx&fromNxList=true&from=map&fromPanelNum=2&timestamp=202602271037&locale=ko&svcName=map_pcv5&searchText=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&bk_query=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&entry=pll&from=nx&fromNxList=true&fromPanelNum=2&timestamp=202602271037&locale=ko&svcName=map_pcv5&searchText=%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4&searchType=place&c=15.00,0,0,0,dh"
               target="_blank"

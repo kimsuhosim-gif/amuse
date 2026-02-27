@@ -12,7 +12,7 @@ export default function Hero() {
         <img
           src="/images/hero.jpeg"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가"
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-[15%_center] lg:object-center"
           loading="eager"
           fetchPriority="high"
         />
@@ -34,27 +34,6 @@ export default function Hero() {
               className="w-full h-full object-contain invert"
             />
           </div>
-        </motion.div>
-      </div>
-
-      {/* CTA Button */}
-      <div className="absolute inset-0 flex flex-col items-center justify-end pb-[140px] md:pb-32">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="flex flex-col items-center gap-8 w-full px-6"
-        >
-          <a
-            href="https://booking.naver.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative flex w-full max-w-[320px] md:max-w-none md:w-auto items-center justify-center gap-3 md:gap-4 overflow-hidden rounded-full bg-white/10 backdrop-blur-md px-6 py-4 md:px-10 md:py-5 text-[10px] md:text-xs font-light tracking-[0.2em] text-white border border-white/20 transition-all duration-500 hover:bg-white hover:text-black whitespace-nowrap"
-            aria-label="네이버 예약"
-          >
-            <span className="relative flex items-center uppercase text-center w-full justify-center">Experience Premium Class</span>
-            <MoveRight strokeWidth={1.5} size={16} className="relative hidden md:block transition-transform duration-500 group-hover:translate-x-2" />
-          </a>
         </motion.div>
       </div>
 
