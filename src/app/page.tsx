@@ -42,15 +42,26 @@ export default function Home() {
           >
             신림 예약
           </a>
-          <a
-            href="https://pf.kakao.com/_xdGyzxj"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="카카오톡 상담으로 이동"
-            className="flex flex-2 items-center justify-center rounded-sm border border-white/30 px-3 py-3 text-[11px] font-semibold tracking-widest text-white transition-colors active:bg-white/10"
-          >
-            카톡 문의
-          </a>
+          <div className="flex flex-1 gap-2">
+            <a
+              href="https://pf.kakao.com/_xdGyzxj"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="안양점 카카오톡 상담"
+              className="flex flex-1 items-center justify-center rounded-sm border border-white/30 px-1 py-3 text-[10px] font-semibold tracking-tighter text-white transition-colors active:bg-white/10"
+            >
+              안양문의
+            </a>
+            <a
+              href="https://pf.kakao.com/_ukNrG"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="신림점 카카오톡 상담"
+              className="flex flex-1 items-center justify-center rounded-sm border border-white/30 px-1 py-3 text-[10px] font-semibold tracking-tighter text-white transition-colors active:bg-white/10"
+            >
+              신림문의
+            </a>
+          </div>
         </div>
       </div>
     </main>

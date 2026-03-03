@@ -21,9 +21,6 @@ export default function Footer() {
               <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
                 Blog
               </a>
-              <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
-                Kakao
-              </a>
             </div>
           </div>
 
@@ -39,6 +36,11 @@ export default function Footer() {
                 <Phone size={16} strokeWidth={1.5} className="shrink-0 text-zinc-600" />
                 <span>031-464-0101</span>
               </li>
+              <li>
+                <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#ab9885] hover:text-white transition-colors">
+                  Kakao 상담 (안양)
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -53,6 +55,11 @@ export default function Footer() {
               <li className="flex gap-3">
                 <Phone size={16} strokeWidth={1.5} className="shrink-0 text-zinc-600" />
                 <span>010-5934-0012</span>
+              </li>
+              <li>
+                <a href="https://pf.kakao.com/_ukNrG" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#ab9885] hover:text-white transition-colors">
+                  Kakao 상담 (신림)
+                </a>
               </li>
             </ul>
           </div>
