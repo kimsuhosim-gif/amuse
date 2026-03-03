@@ -1,18 +1,11 @@
 ﻿import type { Metadata } from "next";
-import { Playfair_Display, Noto_Sans_KR } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const display = Playfair_Display({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800"],
   variable: "--font-display",
-  display: "swap",
-});
-
-const sans = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"],
-  variable: "--font-sans-kr",
   display: "swap",
 });
 
@@ -29,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${display.variable} ${sans.variable}`}>
+    <html lang="ko" className={`${display.variable}`}>
       <body className="bg-white text-zinc-900 antialiased">{children}</body>
     </html>
   );

@@ -7,6 +7,7 @@ import Instructors from "@/components/Instructors";
 import Review from "@/components/Review";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import MobileCTA from "@/components/MobileCTA";
 
 export default function Home() {
   return (
@@ -20,50 +21,7 @@ export default function Home() {
       <Review />
       <FAQ />
       <Footer />
-
-      {/* Mobile CTA Bar */}
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/20 bg-zinc-900/90 px-4 py-3 backdrop-blur-md md:hidden">
-        <div className="mx-auto flex max-w-md gap-2">
-          <a
-            href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4/place/1785101854?placePath=/ticket"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="안양점 예약"
-            className="flex flex-1 items-center justify-center rounded-sm bg-white px-2 py-3 text-[11px] font-semibold tracking-widest text-zinc-900 transition-colors active:bg-zinc-200"
-          >
-            안양 예약
-          </a>
-          <a
-            href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4/place/1242872971?placePath=/ticket"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="신림점 예약"
-            className="flex flex-1 items-center justify-center rounded-sm bg-white px-2 py-3 text-[11px] font-semibold tracking-widest text-zinc-900 transition-colors active:bg-zinc-200"
-          >
-            신림 예약
-          </a>
-          <div className="flex flex-1 gap-2">
-            <a
-              href="https://pf.kakao.com/_xdGyzxj"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="안양점 카카오톡 상담"
-              className="flex flex-1 items-center justify-center rounded-sm border border-white/30 px-1 py-3 text-[10px] font-semibold tracking-tighter text-white transition-colors active:bg-white/10"
-            >
-              안양문의
-            </a>
-            <a
-              href="https://pf.kakao.com/_ukNrG"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="신림점 카카오톡 상담"
-              className="flex flex-1 items-center justify-center rounded-sm border border-white/30 px-1 py-3 text-[10px] font-semibold tracking-tighter text-white transition-colors active:bg-white/10"
-            >
-              신림문의
-            </a>
-          </div>
-        </div>
-      </div>
+      <MobileCTA />
     </main>
   );
 }

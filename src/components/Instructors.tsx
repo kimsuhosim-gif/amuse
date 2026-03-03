@@ -2,7 +2,7 @@
 
 // file: src/components/Instructors.tsx
 import { motion } from "framer-motion";
-import { User2 } from "lucide-react";
+import { User2, MoveRight } from "lucide-react";
 
 const instructors = {
     anyang: [
@@ -37,15 +37,25 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6, delay: index * 0.1 }}
-        className="group flex gap-5 bg-white p-6 md:p-8 rounded-xl border border-zinc-100 shadow-sm transition-all hover:shadow-md"
+        className="group relative flex gap-5 bg-white p-6 md:p-8 rounded-2xl border border-zinc-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_15px_30px_-15px_rgba(171,152,133,0.3)] hover:-translate-y-1 overflow-hidden"
     >
-        <div className="flex-shrink-0 relative overflow-hidden bg-zinc-100 rounded-full w-14 h-14 md:w-20 md:h-20 flex items-center justify-center">
-            <User2 className="text-zinc-300 w-6 h-6 md:w-8 md:h-8" />
+        {/* Decorative background glow on hover */}
+        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 rounded-full bg-[#ab9885]/10 blur-2xl transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-150"></div>
+
+        <div className="flex-shrink-0 relative overflow-hidden bg-zinc-50 group-hover:bg-[#ab9885]/10 transition-colors duration-500 rounded-full w-14 h-14 md:w-20 md:h-20 flex items-center justify-center">
+            <User2 className="text-zinc-300 group-hover:text-[#ab9885] transition-colors duration-500 w-6 h-6 md:w-8 md:h-8" />
         </div>
-        <div className="flex flex-col justify-center">
-            <h4 className="font-display text-lg md:text-xl text-zinc-900 group-hover:text-[#ab9885] transition-colors">{info.name}</h4>
-            <p className="text-[11px] font-semibold text-[#ab9885] mb-3">{info.role}</p>
-            <p className="text-xs font-light text-zinc-500 whitespace-pre-wrap leading-relaxed">{info.profile}</p>
+        <div className="flex flex-col justify-center z-10 pr-6">
+            <h4 className="font-display text-lg md:text-xl text-zinc-900 group-hover:text-[#ab9885] transition-colors duration-500">{info.name}</h4>
+            <p className="text-[11px] font-semibold text-[#8f775f] mb-3">{info.role}</p>
+            <p className="text-xs font-light text-zinc-500 whitespace-pre-wrap leading-relaxed transition-colors duration-500 group-hover:text-zinc-700">{info.profile}</p>
+        </div>
+
+        {/* Hover Arrow Indicator */}
+        <div className="absolute bottom-6 right-6 opacity-0 translate-x-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0 hidden md:flex">
+            <div className="w-8 h-8 rounded-full bg-[#ab9885]/10 flex items-center justify-center text-[#ab9885]">
+                <MoveRight size={14} />
+            </div>
         </div>
     </motion.div>
 );

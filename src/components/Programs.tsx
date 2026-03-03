@@ -63,9 +63,13 @@ export default function Programs() {
                                 <span className="text-[10px] uppercase tracking-widest text-zinc-400">{prog.kicker}</span>
                                 <h3 className="font-display text-3xl text-zinc-900">{prog.title}</h3>
                             </div>
-                            <p className="text-sm font-light leading-relaxed text-zinc-500">
+                            <p className="text-sm font-light leading-relaxed text-zinc-500 mb-6 flex-1">
                                 {prog.desc}
                             </p>
+                            <a href="#studios" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#8f775f] group-hover:text-zinc-900 transition-colors duration-500 w-fit">
+                                <span>관련 시간표 보기</span>
+                                <span className="transform transition-transform duration-500 group-hover:translate-x-1">→</span>
+                            </a>
                         </motion.div>
                     ))}
                 </div>
