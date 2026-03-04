@@ -2,7 +2,7 @@
 
 // file: src/components/Instructors.tsx
 import { motion } from "framer-motion";
-import { User2, MoveRight } from "lucide-react";
+import { User2, MoveRight, Instagram } from "lucide-react";
 import Image from "next/image";
 
 const instructors = {
@@ -119,9 +119,10 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
                     href={`https://instagram.com/${info.insta.replace('@', '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] md:text-[11px] font-medium text-zinc-400 group-hover:text-[#bea396] transition-colors hover:underline"
+                    className="flex items-center gap-1.5 text-[10px] md:text-[11px] font-medium text-zinc-400 hover:text-[#bea396] transition-all duration-300 group/insta"
                 >
-                    {info.insta}
+                    <Instagram size={13} className="group-hover/insta:scale-110 transition-transform duration-300" />
+                    <span className="hover:underline">{info.insta}</span>
                 </a>
             </div>
         </div>
