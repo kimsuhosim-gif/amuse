@@ -7,25 +7,25 @@ import { User2, MoveRight } from "lucide-react";
 const instructors = {
     anyang: [
         {
-            name: "서아 (Seo-a)",
-            role: "원장 / 안양 본점 메인 강사",
+            name: "김서아 (SEOA)",
+            role: "안양점 원장",
             profile: "에어리얼 요가 & 폴댄스 전문가 과정 마스터\n프리미엄 체형교정 수료",
         },
         {
-            name: "지유 (Ji-yu)",
-            role: "안양 본점 전임 강사",
+            name: "이미연 (YONI)",
+            role: "안양점 강사",
             profile: "에어리얼 아트 퍼포먼스 전문\n입문자 맞춤형 티칭 세미나 수료",
+        },
+        {
+            name: "최유현 (YU HYUN)",
+            role: "안양점 강사",
+            profile: "안전 최우선 폴댄스 지도자 과정 수료\n어드밴스드 코어 강화 전문",
         },
     ],
     sillim: [
         {
-            name: "민서 (Min-seo)",
-            role: "신림 2호점 전임 강사",
-            profile: "안전 최우선 폴댄스 지도자 과정 수료\n어드밴스드 코어 강화 전문",
-        },
-        {
-            name: "수아 (Su-a)",
-            role: "신림 2호점 전임 강사",
+            name: "김서안 (SEOAN)",
+            role: "신림점 원장",
             profile: "플라잉 요가 인스트럭터\n유연성 및 밸런스 향상 전문",
         },
     ],
