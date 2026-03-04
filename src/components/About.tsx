@@ -2,7 +2,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const philosophyItems = [
   {
@@ -23,6 +24,15 @@ const philosophyItems = [
 ];
 
 export default function About() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  // Create a parallax effect by moving the image slightly as user scrolls
+  const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+
   return (
     <section id="about" className="relative bg-[#faf9f7] py-32 md:py-48" aria-label="필로소피">
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
@@ -73,21 +83,20 @@ export default function About() {
         </div>
 
         {/* Large Decorative Image Area */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="mt-32 relative aspect-[21/9] w-full overflow-hidden"
-        >
-          <Image
-            src="/images/design-image.jpeg"
-            alt="Amuse detail"
-            fill
-            className="object-cover object-center transition-transform duration-1000 hover:scale-105"
-            sizes="100vw"
-          />
-        </motion.div>
+        <div ref={containerRef} className="mt-32 relative w-full overflow-hidden aspect-[16/9] md:aspect-[21/9]">
+          <motion.div
+            style={{ y }}
+            className="absolute inset-x-0 -inset-y-[15%] w-full h-[130%]"
+          >
+            <Image
+              src="/images/design-image.jpeg"
+              alt="Amuse detail"
+              fill
+              className="object-cover object-center"
+              sizes="100vw"
+            />
+          </motion.div>
+        </div>
       </div>
     </section>
   );

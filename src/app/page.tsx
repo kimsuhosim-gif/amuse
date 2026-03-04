@@ -1,5 +1,6 @@
 ﻿import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
 import Studios from "@/components/Timetable";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className="min-h-screen bg-transparent">
       <Navbar />
       <Hero />
+      <Marquee />
       <About />
       <Programs />
       <Studios />
