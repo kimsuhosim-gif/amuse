@@ -111,13 +111,13 @@ export default function Studios() {
   };
 
   return (
-    <section id="studios" className="bg-[#111111] py-32 md:py-48 text-zinc-300 relative overflow-hidden" aria-label="스튜디오 안내">
+    <section id="studios" className="bg-[#111111] py-16 md:py-48 text-zinc-300 relative overflow-hidden" aria-label="스튜디오 안내">
       {/* Subtle Background Elements */}
       <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-[#bea396]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
 
-      <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12 relative z-10">
+      <div className="mx-auto w-full max-w-[85rem] px-4 md:px-6 lg:px-12 relative z-10 w-full overflow-hidden">
         {/* Header & Tabs */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-20 md:mb-32">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12 mb-8 md:mb-32">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -161,7 +161,7 @@ export default function Studios() {
         </div>
 
         {/* Content Area */}
-        <div className="flex flex-col lg:grid lg:gap-16 lg:grid-cols-[0.8fr_1fr_1.2fr] gap-12">
+        <div className="flex flex-col lg:grid lg:gap-16 lg:grid-cols-[0.8fr_1fr_1.2fr] gap-8">
           {/* Image */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -170,7 +170,7 @@ export default function Studios() {
               animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
               exit={{ opacity: 0, filter: "blur(10px)", scale: 1.05 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="relative aspect-[4/3] sm:aspect-[3/4] lg:aspect-auto lg:h-[650px] w-full overflow-hidden rounded-[2rem] border border-zinc-800/80 shadow-[0_0_50px_rgba(0,0,0,0.5)] group order-1 lg:order-none"
+              className="relative aspect-[2/1] sm:aspect-[4/3] lg:aspect-auto lg:h-[650px] w-full overflow-hidden rounded-3xl border border-zinc-800/80 shadow-[0_0_50px_rgba(0,0,0,0.5)] group order-1 lg:order-none"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 pointer-events-none opacity-50 transition-opacity duration-700 group-hover:opacity-0" />
               <Image
@@ -194,9 +194,9 @@ export default function Studios() {
               className="flex flex-col justify-center order-2 lg:order-none"
             >
               <h3 className="font-sans font-extrabold text-3xl text-white mb-2 tracking-tight">{info.label} Studio</h3>
-              <p className="text-[13px] font-semibold text-[#bea396] mb-12">{info.subName}</p>
+              <p className="text-[13px] font-semibold text-[#bea396] mb-8 lg:mb-12">{info.subName}</p>
 
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col gap-6 sm:gap-10">
                 <article className="group">
                   <div className="flex items-center gap-3 mb-5">
                     <div className="w-8 h-[1px] bg-zinc-800 transition-colors group-hover:bg-zinc-600"></div>
@@ -241,7 +241,7 @@ export default function Studios() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-col justify-center lg:pl-10 order-3 lg:order-none"
             >
-              <div className="bg-[#1a1a1a]/50 border border-zinc-800/80 rounded-[2rem] p-6 sm:p-8 backdrop-blur-sm">
+              <div className="bg-[#1a1a1a]/50 border border-zinc-800/80 rounded-3xl p-4 sm:p-8 backdrop-blur-sm w-full">
                 <div className="flex items-center justify-between mb-8">
                   <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400">Class Schedule</p>
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-[#bea396] bg-[#bea396]/10 px-3 py-1.5 rounded-full">2026. 02</span>
@@ -274,14 +274,14 @@ export default function Studios() {
                     >
                       {activeSchedule?.length > 0 ? (
                         activeSchedule.map((item, idx) => (
-                          <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-5 group hover:bg-zinc-800/60 hover:border-zinc-700 transition-all duration-400">
-                            <div className="flex items-center gap-4 sm:gap-6 mb-3 sm:mb-0">
-                              <span className="font-display text-2xl text-[#bea396]/80 group-hover:text-[#bea396] transition-colors">{item.time}</span>
-                              <div className="w-[1px] h-8 bg-zinc-800 hidden sm:block"></div>
-                              <span className="text-[15px] font-bold text-zinc-300 group-hover:text-white transition-colors">{item.name}</span>
+                          <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-4 sm:p-5 group hover:bg-zinc-800/60 hover:border-zinc-700 transition-all duration-400 gap-y-3 sm:gap-y-0 w-full">
+                            <div className="flex items-center gap-3 sm:gap-6">
+                              <span className="font-display text-xl sm:text-2xl text-[#bea396]/80 group-hover:text-[#bea396] transition-colors">{item.time}</span>
+                              <div className="w-[1px] h-6 sm:h-8 bg-zinc-800 hidden sm:block"></div>
+                              <span className="text-[14px] sm:text-[15px] font-bold text-zinc-300 group-hover:text-white transition-colors break-words max-w-[200px] sm:max-w-none line-clamp-2">{item.name}</span>
                             </div>
                             {item.level && (
-                              <span className="self-start sm:self-auto text-[11px] font-semibold px-3 py-1.5 rounded-lg bg-zinc-800/50 text-zinc-400 group-hover:bg-[#bea396]/10 group-hover:text-[#bea396] border border-zinc-800/50 transition-colors">
+                              <span className="self-start sm:self-auto text-[10px] sm:text-[11px] font-semibold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-zinc-800/50 text-zinc-400 group-hover:bg-[#bea396]/10 group-hover:text-[#bea396] border border-zinc-800/50 transition-colors block text-center break-words max-w-[150px] sm:max-w-[200px]">
                                 {item.level}
                               </span>
                             )}
