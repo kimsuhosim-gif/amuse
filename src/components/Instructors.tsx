@@ -107,7 +107,14 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
             </ul>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-4 border-t border-zinc-200/80">
                 <p className="text-[11px] font-semibold text-[#8f775f] tracking-wide">{info.tags}</p>
-                <p className="text-[10px] md:text-[11px] font-medium text-zinc-400 group-hover:text-zinc-900 transition-colors">{info.insta}</p>
+                <a
+                    href={`https://instagram.com/${info.insta.replace('@', '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[10px] md:text-[11px] font-medium text-zinc-400 group-hover:text-[#ab9885] transition-colors hover:underline"
+                >
+                    {info.insta}
+                </a>
             </div>
         </div>
     </motion.div>
