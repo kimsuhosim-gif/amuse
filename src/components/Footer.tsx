@@ -26,7 +26,7 @@ export default function Footer() {
 
           {/* Anyang Branch */}
           <div className="flex flex-col">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ab9885] mb-6">Anyang Studio</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#bea396] mb-6">Anyang Studio</h3>
             <ul className="flex flex-col gap-4 text-sm font-light">
               <li className="flex gap-3">
                 <MapPin size={16} strokeWidth={1.5} className="shrink-0 text-zinc-600 mt-0.5" />
@@ -37,7 +37,7 @@ export default function Footer() {
                 <span>031-464-0101</span>
               </li>
               <li>
-                <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#ab9885] hover:text-white transition-colors">
+                <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
                   Kakao 상담 (안양)
                 </a>
               </li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Sillim Branch */}
           <div className="flex flex-col">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ab9885] mb-6">Sillim Studio</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#bea396] mb-6">Sillim Studio</h3>
             <ul className="flex flex-col gap-4 text-sm font-light">
               <li className="flex gap-3">
                 <MapPin size={16} strokeWidth={1.5} className="shrink-0 text-zinc-600 mt-0.5" />
@@ -57,7 +57,7 @@ export default function Footer() {
                 <span>010-5934-0012</span>
               </li>
               <li>
-                <a href="https://pf.kakao.com/_ukNrG" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#ab9885] hover:text-white transition-colors">
+                <a href="https://pf.kakao.com/_ukNrG" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
                   Kakao 상담 (신림)
                 </a>
               </li>
@@ -66,7 +66,7 @@ export default function Footer() {
 
           {/* Nav Links */}
           <div className="flex flex-col">
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#ab9885] mb-6">Explore</h3>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#bea396] mb-6">Explore</h3>
             <ul className="flex flex-col gap-3 text-sm font-light">
               <li><a href="#about" className="hover:text-white transition-colors">Philosophy</a></li>
               <li><a href="#programs" className="hover:text-white transition-colors">Programs</a></li>

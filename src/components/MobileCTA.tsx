@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { X, CalendarCheck, MessageCircle, MoveRight } from "lucide-react";
@@ -27,14 +27,14 @@ export default function MobileCTA() {
                         className="flex flex-1 items-center justify-center gap-2 rounded-[14px] bg-white px-4 py-3.5 text-[14px] font-[800] tracking-wide text-zinc-900 shadow-[0_4px_15px_rgba(255,255,255,0.15)] transition-transform active:scale-[0.97]"
                     >
                         <CalendarCheck size={18} strokeWidth={2.5} />
-                        <span>예약하기</span>
+                        <span>?덉빟?섍린</span>
                     </button>
                     <button
                         onClick={() => setModalType("inquiry")}
                         className="flex flex-1 items-center justify-center gap-2 rounded-[14px] bg-[#fae100] px-4 py-3.5 text-[14px] font-[900] tracking-wide text-[#371d1e] shadow-[0_4px_15px_rgba(250,225,0,0.2)] transition-transform active:scale-[0.97]"
                     >
                         <MessageCircle size={18} strokeWidth={2.5} />
-                        <span>카톡상담</span>
+                        <span>移댄넚?곷떞</span>
                     </button>
                 </div>
             </div>
@@ -59,7 +59,7 @@ export default function MobileCTA() {
                             <button
                                 onClick={() => setModalType(null)}
                                 className="absolute right-5 top-5 p-2 text-zinc-400 hover:text-zinc-600 bg-zinc-100 rounded-full transition-colors"
-                                aria-label="닫기"
+                                aria-label="?リ린"
                             >
                                 <X size={20} />
                             </button>
@@ -67,9 +67,9 @@ export default function MobileCTA() {
                             <div className="mb-8 pl-2 w-full flex flex-col items-center">
                                 <span className="h-1 w-12 bg-zinc-200 rounded-full mb-6"></span>
                                 <h3 className="font-display font-[800] text-2xl md:text-3xl text-zinc-900 tracking-tight text-center">
-                                    어느 지점으로
+                                    ?대뒓 吏?먯쑝濡?
                                     <br />
-                                    {modalType === "book" ? "예약할까요?" : "문의할까요?"}
+                                    {modalType === "book" ? "?덉빟?좉퉴??" : "臾몄쓽?좉퉴??"}
                                 </h3>
                             </div>
 
@@ -78,12 +78,12 @@ export default function MobileCTA() {
                                     href={links.anyang[modalType]}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group flex flex-row items-center justify-between rounded-2xl bg-[#faf9f7] border border-zinc-100 p-6 transition-all duration-300 active:bg-zinc-100"
+                                    className="group flex flex-row items-center justify-between rounded-2xl bg-[#fdfbf9] border border-zinc-100 p-6 transition-all duration-300 active:bg-zinc-100"
                                     onClick={() => setModalType(null)}
                                 >
                                     <div className="flex flex-col">
-                                        <span className="text-[17px] font-[800] text-zinc-900 mb-1">안양 본점</span>
-                                        <span className="text-[12px] font-medium text-zinc-500">동안구 관악대로 103, 9층</span>
+                                        <span className="text-[17px] font-[800] text-zinc-900 mb-1">?덉뼇 蹂몄젏</span>
+                                        <span className="text-[12px] font-medium text-zinc-500">?숈븞援?愿?낅?濡?103, 9痢?/span>
                                     </div>
                                     <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-zinc-400 group-hover:text-zinc-900 group-active:text-zinc-900 transition-colors">
                                         <MoveRight size={18} strokeWidth={2} />
@@ -93,12 +93,12 @@ export default function MobileCTA() {
                                     href={links.sillim[modalType]}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="group flex flex-row items-center justify-between rounded-2xl bg-[#faf9f7] border border-zinc-100 p-6 transition-all duration-300 active:bg-zinc-100"
+                                    className="group flex flex-row items-center justify-between rounded-2xl bg-[#fdfbf9] border border-zinc-100 p-6 transition-all duration-300 active:bg-zinc-100"
                                     onClick={() => setModalType(null)}
                                 >
                                     <div className="flex flex-col">
-                                        <span className="text-[17px] font-[800] text-zinc-900 mb-1">신림 2호점</span>
-                                        <span className="text-[12px] font-medium text-zinc-500">관악구 신사로 116-1, 3층</span>
+                                        <span className="text-[17px] font-[800] text-zinc-900 mb-1">?좊┝ 2?몄젏</span>
+                                        <span className="text-[12px] font-medium text-zinc-500">愿?낃뎄 ?좎궗濡?116-1, 3痢?/span>
                                     </div>
                                     <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm text-zinc-400 group-hover:text-zinc-900 group-active:text-zinc-900 transition-colors">
                                         <MoveRight size={18} strokeWidth={2} />

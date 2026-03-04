@@ -73,16 +73,16 @@
 }
 
 :root {
-  --bg: #f6f4f1;
-  --bg-alt: #eeebe7;
+  --bg: #fdfbf9;
+  --bg-alt: #f6f3ef;
   --surface: #ffffff;
-  --surface-strong: #f8f6f3;
-  --ink: #191817;
-  --muted: #6a6763;
-  --line: rgba(26, 22, 18, 0.12);
-  --accent: #8f775f;
-  --accent-2: #b19a85;
-  --deep: #131211;
+  --surface-strong: #faf6f3;
+  --ink: #2a2422;
+  --muted: #857a74;
+  --line: rgba(45, 30, 25, 0.08);
+  --accent: #a68377;
+  --accent-2: #c4aca3;
+  --deep: #1a1614;
 }
 
 @theme inline {
@@ -105,7 +105,7 @@ body {
 }
 
 body {
-  background: linear-gradient(180deg, #f8f6f3 0%, #f4f1ed 100%);
+  background: linear-gradient(180deg, #fdfbf9 0%, #f6f3ef 100%);
   color: var(--ink);
   font-family: var(--font-sans);
   line-height: 1.68;

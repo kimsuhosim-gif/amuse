@@ -113,7 +113,7 @@ export default function Studios() {
   return (
     <section id="studios" className="bg-[#111111] py-32 md:py-48 text-zinc-300 relative overflow-hidden" aria-label="스튜디오 안내">
       {/* Subtle Background Elements */}
-      <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-[#ab9885]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+      <div className="absolute top-1/4 right-0 w-[800px] h-[800px] bg-[#bea396]/10 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
 
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12 relative z-10">
         {/* Header & Tabs */}
@@ -125,11 +125,11 @@ export default function Studios() {
             transition={{ duration: 1 }}
           >
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-8 h-[1px] bg-[#ab9885]/80"></div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#ab9885]">Studios & Schedule</p>
+              <div className="w-8 h-[1px] bg-[#bea396]/80"></div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396]">Studios & Schedule</p>
             </div>
             <h2 className="font-display text-4xl leading-[1.15] text-white md:text-5xl lg:text-7xl">
-              Sanctuaries of<br /> <span className="text-[#ab9885] italic font-light">elegance</span>
+              Sanctuaries of<br /> <span className="text-[#bea396] italic font-light">elegance</span>
             </h2>
           </motion.div>
 
@@ -194,7 +194,7 @@ export default function Studios() {
               className="flex flex-col justify-center"
             >
               <h3 className="font-sans font-extrabold text-3xl text-white mb-2 tracking-tight">{info.label} Studio</h3>
-              <p className="text-[13px] font-semibold text-[#ab9885] mb-12">{info.subName}</p>
+              <p className="text-[13px] font-semibold text-[#bea396] mb-12">{info.subName}</p>
 
               <div className="flex flex-col gap-10">
                 <article className="group">
@@ -203,7 +203,7 @@ export default function Studios() {
                     <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-zinc-500">Location</p>
                   </div>
                   <p className="text-[15px] font-light text-zinc-300 leading-relaxed mb-1 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                    <span className="flex items-center gap-2"><MapPin strokeWidth={1} size={16} className="text-[#ab9885]" /> {info.address}</span>
+                    <span className="flex items-center gap-2"><MapPin strokeWidth={1} size={16} className="text-[#bea396]" /> {info.address}</span>
                   </p>
                   <p className="text-[13px] text-zinc-500 leading-relaxed pl-6 mt-2">{info.access}</p>
                 </article>
@@ -214,10 +214,10 @@ export default function Studios() {
                     <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-zinc-500">Information</p>
                   </div>
                   <p className="text-[15px] font-light text-zinc-300 leading-relaxed mb-4 flex items-center gap-3">
-                    <Clock3 strokeWidth={1} size={16} className="text-[#ab9885]" /> {info.hours}
+                    <Clock3 strokeWidth={1} size={16} className="text-[#bea396]" /> {info.hours}
                   </p>
                   <p className="text-[15px] font-light text-zinc-300 leading-relaxed flex items-center gap-3 min-w-max">
-                    <Phone strokeWidth={1} size={16} className="text-[#ab9885] shrink-0" /> {info.phone}
+                    <Phone strokeWidth={1} size={16} className="text-[#bea396] shrink-0" /> {info.phone}
                   </p>
                 </article>
               </div>
@@ -244,7 +244,7 @@ export default function Studios() {
               <div className="bg-[#1a1a1a]/50 border border-zinc-800/80 rounded-[2rem] p-6 sm:p-8 backdrop-blur-sm">
                 <div className="flex items-center justify-between mb-8">
                   <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400">Class Schedule</p>
-                  <span className="text-[10px] font-semibold uppercase tracking-widest text-[#ab9885] bg-[#ab9885]/10 px-3 py-1.5 rounded-full">2026. 02</span>
+                  <span className="text-[10px] font-semibold uppercase tracking-widest text-[#bea396] bg-[#bea396]/10 px-3 py-1.5 rounded-full">2026. 02</span>
                 </div>
 
                 <div className="flex gap-2 overflow-x-auto pb-6 mb-2 scrollbar-hide snap-x">
@@ -276,12 +276,12 @@ export default function Studios() {
                         activeSchedule.map((item, idx) => (
                           <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-5 group hover:bg-zinc-800/60 hover:border-zinc-700 transition-all duration-400">
                             <div className="flex items-center gap-4 sm:gap-6 mb-3 sm:mb-0">
-                              <span className="font-display text-2xl text-[#ab9885]/80 group-hover:text-[#ab9885] transition-colors">{item.time}</span>
+                              <span className="font-display text-2xl text-[#bea396]/80 group-hover:text-[#bea396] transition-colors">{item.time}</span>
                               <div className="w-[1px] h-8 bg-zinc-800 hidden sm:block"></div>
                               <span className="text-[15px] font-bold text-zinc-300 group-hover:text-white transition-colors">{item.name}</span>
                             </div>
                             {item.level && (
-                              <span className="self-start sm:self-auto text-[11px] font-semibold px-3 py-1.5 rounded-lg bg-zinc-800/50 text-zinc-400 group-hover:bg-[#ab9885]/10 group-hover:text-[#ab9885] border border-zinc-800/50 transition-colors">
+                              <span className="self-start sm:self-auto text-[11px] font-semibold px-3 py-1.5 rounded-lg bg-zinc-800/50 text-zinc-400 group-hover:bg-[#bea396]/10 group-hover:text-[#bea396] border border-zinc-800/50 transition-colors">
                                 {item.level}
                               </span>
                             )}

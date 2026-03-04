@@ -1,4 +1,4 @@
-// file: src/components/Programs.tsx
+﻿// file: src/components/Programs.tsx
 "use client";
 
 import Image from "next/image";
@@ -9,14 +9,14 @@ const programs = [
         id: "pole",
         title: "Pole Dance",
         kicker: "01",
-        desc: "코어 근력과 유연성을 동시에 기르며 하나의 아름다운 작품을 만들어내는 에어리얼 아트.",
+        desc: "肄붿뼱 洹쇰젰怨??좎뿰?깆쓣 ?숈떆??湲곕Ⅴ硫??섎굹???꾨쫫?ㅼ슫 ?묓뭹??留뚮뱾?대궡???먯뼱由ъ뼹 ?꾪듃.",
         img: "/images/pole.jpg"
     },
     {
         id: "flying",
         title: "Flying Yoga",
         kicker: "02",
-        desc: "부드러운 해먹에 몸을 맡겨 신체의 정렬을 돕고 깊은 이완과 근력 강화를 동시에 이룹니다.",
+        desc: "遺?쒕윭???대㉨??紐몄쓣 留↔꺼 ?좎껜???뺣젹???뺢퀬 源딆? ?댁셿怨?洹쇰젰 媛뺥솕瑜??숈떆???대９?덈떎.",
         img: "/images/flying.jpg"
     }
 ];
@@ -32,7 +32,7 @@ export default function Programs() {
                     transition={{ duration: 1 }}
                     className="mb-20 md:mb-32 flex flex-col items-center text-center"
                 >
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#ab9885] mb-6">Programs</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-6">Programs</p>
                     <h2 className="font-display text-4xl leading-[1.2] text-zinc-900 md:text-5xl lg:text-6xl">
                         Awaken your<br />hidden elegance
                     </h2>
@@ -66,9 +66,9 @@ export default function Programs() {
                             <p className="text-sm font-light leading-relaxed text-zinc-500 mb-6 flex-1">
                                 {prog.desc}
                             </p>
-                            <a href="#studios" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#8f775f] group-hover:text-zinc-900 transition-colors duration-500 w-fit">
-                                <span>관련 시간표 보기</span>
-                                <span className="transform transition-transform duration-500 group-hover:translate-x-1">→</span>
+                            <a href="#studios" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#a68377] group-hover:text-zinc-900 transition-colors duration-500 w-fit">
+                                <span>愿???쒓컙??蹂닿린</span>
+                                <span className="transform transition-transform duration-500 group-hover:translate-x-1">??/span>
                             </a>
                         </motion.div>
                     ))}

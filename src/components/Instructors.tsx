@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 // file: src/components/Instructors.tsx
 import { motion } from "framer-motion";
@@ -8,70 +8,70 @@ import Image from "next/image";
 const instructors = {
     anyang: [
         {
-            name: "김서아 (SEOA)",
-            role: "대표 / 안양점 원장",
+            name: "源?쒖븘 (SEOA)",
+            role: "???/ ?덉뼇???먯옣",
             image: "/images/instructors/seo_a.jpg",
-            quote: "건강과 행복을 위한 스튜디오로\n운영하겠습니다",
+            quote: "嫄닿컯怨??됰났???꾪븳 ?ㅽ뒠?붿삤濡?n?댁쁺?섍쿋?듬땲??,
             history: [
                 "2010 RELAX YOGA, HOT YOGA",
                 "2010 VINYASA YOGA, AERIAL YOGA",
-                "2011 생활체육지도자 2급 보디빌딩",
-                "2012 퍼스널트레이너 TTC 수료",
-                "2013 BASTM 연부조직 테라피 수료",
-                "2013~15 나바코리아 및 각종 피트니스대회 입상",
-                "2014 다이어트 도시락 홍보모델",
-                "2014 PEAK PILATES (클래식 필라테스)",
-                "2015 산전 산후 임산부 필라테스 교육강사",
-                "2015 모던필라테스 교육강사",
-                "2019 폴댄스 2급 + 1급",
-                "2023 현 아뮤즈 폴댄스 플라잉요가 대표",
+                "2011 ?앺솢泥댁쑁吏?꾩옄 2湲?蹂대뵒鍮뚮뵫",
+                "2012 ?쇱뒪?먰듃?덉씠??TTC ?섎즺",
+                "2013 BASTM ?곕?議곗쭅 ?뚮씪???섎즺",
+                "2013~15 ?섎컮肄붾━??諛?媛곸쥌 ?쇳듃?덉뒪????낆긽",
+                "2014 ?ㅼ씠?댄듃 ?꾩떆???띾낫紐⑤뜽",
+                "2014 PEAK PILATES (?대옒???꾨씪?뚯뒪)",
+                "2015 ?곗쟾 ?고썑 ?꾩궛遺 ?꾨씪?뚯뒪 援먯쑁媛뺤궗",
+                "2015 紐⑤뜕?꾨씪?뚯뒪 援먯쑁媛뺤궗",
+                "2019 ?대똾??2湲?+ 1湲?,
+                "2023 ???꾨?利??대똾???뚮씪?됱슂媛 ???,
             ],
-            tags: "#ISFP #원장쌤 #칭찬감옥",
+            tags: "#ISFP #?먯옣??#移?갔媛먯삦",
             insta: "@SSEOAKIMN",
         },
         {
-            name: "이미연 (YONI)",
-            role: "안양점 강사",
+            name: "?대???(YONI)",
+            role: "?덉뼇??媛뺤궗",
             image: "/images/instructors/yoni.jpg",
-            quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
+            quote: "移쒖젅?섍퀬 紐낇솗??由щ뜑?쎌쑝濡?n?먮꼫吏瑜??꾪븯??媛뺤궗?낅땲??,
             history: [
-                "2021 폴댄스 전문가 3급 + 2급",
-                "2021 폴댄스 지도자 수료",
-                "2024 필라테스 지도자 수료",
-                "2021 온폴댄스 잠실새내점 강사",
-                "2023 현 아뮤즈 폴댄스 플라잉요가 스튜디오 강사",
+                "2021 ?대똾???꾨Ц媛 3湲?+ 2湲?,
+                "2021 ?대똾??吏?꾩옄 ?섎즺",
+                "2024 ?꾨씪?뚯뒪 吏?꾩옄 ?섎즺",
+                "2021 ?⑦뤃?꾩뒪 ?좎떎?덈궡??媛뺤궗",
+                "2023 ???꾨?利??대똾???뚮씪?됱슂媛 ?ㅽ뒠?붿삤 媛뺤궗",
             ],
-            tags: "#INFJ #요니T #친절퀸",
+            tags: "#INFJ #?붾땲T #移쒖젅??,
             insta: "@POLLERINA_YONI",
         },
         {
-            name: "최유현 (YU HYUN)",
-            role: "안양점 강사",
-            quote: "유연한 몸, 편안한 마음.\n기분 좋은 변화를 선물하는 강사입니다",
+            name: "理쒖쑀??(YU HYUN)",
+            role: "?덉뼇??媛뺤궗",
+            quote: "?좎뿰??紐? ?몄븞??留덉쓬.\n湲곕텇 醫뗭? 蹂?붾? ?좊Ъ?섎뒗 媛뺤궗?낅땲??,
             history: [
-                "2018 요가 지도자 수료",
-                "2022 폴댄스 2급 수료",
-                "2023 폴댄스 지도자 수료",
-                "2024 타라폴댄스 강사",
-                "2025 현 아뮤즈 폴댄스&플라잉요가 강사",
+                "2018 ?붽? 吏?꾩옄 ?섎즺",
+                "2022 ?대똾??2湲??섎즺",
+                "2023 ?대똾??吏?꾩옄 ?섎즺",
+                "2024 ??쇳뤃?꾩뒪 媛뺤궗",
+                "2025 ???꾨?利??대똾???뚮씪?됱슂媛 媛뺤궗",
             ],
-            tags: "#ISFP #유현T #아뮤즈힘문어",
+            tags: "#ISFP #?좏쁽T #?꾨?利덊옒臾몄뼱",
             insta: "@POLE_YUHYUN",
         },
     ],
     sillim: [
         {
-            name: "김서안 (SEOAN)",
-            role: "신림점 원장",
+            name: "源?쒖븞 (SEOAN)",
+            role: "?좊┝???먯옣",
             image: "/images/instructors/seo_an.jpg",
-            quote: "당신의 폴댄스가 예술이 될 수 있게,\n섬세하게 디테일을 지도합니다",
+            quote: "?뱀떊???대똾?ㅺ? ?덉닠???????덇쾶,\n?ъ꽭?섍쾶 ?뷀뀒?쇱쓣 吏?꾪빀?덈떎",
             history: [
-                "2022 KBPF 전문가 2급 수료",
-                "2023 KBPF 전문가 1급 수료",
-                "2024 현 오하운 폴댄스 강남점 강사",
-                "2025 현 아뮤즈 폴댄스 플라잉요가 안양점/신림점 강사",
+                "2022 KBPF ?꾨Ц媛 2湲??섎즺",
+                "2023 KBPF ?꾨Ц媛 1湲??섎즺",
+                "2024 ???ㅽ븯???대똾??媛뺣궓??媛뺤궗",
+                "2025 ???꾨?利??대똾???뚮씪?됱슂媛 ?덉뼇???좊┝??媛뺤궗",
             ],
-            tags: "#ENFJ #서안T #디테일 #폴아트",
+            tags: "#ENFJ #?쒖븞T #?뷀뀒??#?댁븘??,
             insta: "@SEOAN_POLE",
         },
     ],
@@ -86,40 +86,40 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
         className="group relative flex flex-col gap-5 bg-white p-6 md:p-8 rounded-2xl border border-zinc-100 shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] transition-all duration-500 hover:shadow-[0_15px_30px_-15px_rgba(171,152,133,0.3)] hover:-translate-y-1 overflow-hidden"
     >
         {/* Decorative background glow on hover */}
-        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 rounded-full bg-[#ab9885]/10 blur-2xl transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-150"></div>
+        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 rounded-full bg-[#bea396]/10 blur-2xl transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-150"></div>
 
         <div className="flex gap-5 items-center">
-            <div className="flex-shrink-0 relative overflow-hidden bg-zinc-50 group-hover:bg-[#ab9885]/10 transition-colors duration-500 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
+            <div className="flex-shrink-0 relative overflow-hidden bg-zinc-50 group-hover:bg-[#bea396]/10 transition-colors duration-500 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
                 {info.image ? (
                     <Image src={info.image} alt={info.name} fill className="object-cover" />
                 ) : (
-                    <User2 className="text-zinc-300 group-hover:text-[#ab9885] transition-colors duration-500 w-6 h-6 md:w-8 md:h-8" />
+                    <User2 className="text-zinc-300 group-hover:text-[#bea396] transition-colors duration-500 w-6 h-6 md:w-8 md:h-8" />
                 )}
             </div>
             <div className="flex flex-col justify-center z-10 pr-6">
                 <h4 className="font-display text-lg md:text-xl text-zinc-900 group-hover:text-[#a08b76] transition-colors duration-500 whitespace-nowrap">{info.name}</h4>
-                <p className="text-[11px] font-semibold text-[#8f775f]">{info.role}</p>
+                <p className="text-[11px] font-semibold text-[#a68377]">{info.role}</p>
             </div>
         </div>
 
-        <div className="z-10 bg-[#faf9f7] rounded-xl p-5 border border-zinc-100 flex-1 flex flex-col transition-colors duration-500 group-hover:bg-white group-hover:border-[#ab9885]/20">
+        <div className="z-10 bg-[#fdfbf9] rounded-xl p-5 border border-zinc-100 flex-1 flex flex-col transition-colors duration-500 group-hover:bg-white group-hover:border-[#bea396]/20">
             <p className="text-[13px] md:text-sm font-medium text-zinc-800 whitespace-pre-wrap leading-relaxed italic mb-5">
                 '{info.quote}'
             </p>
             <ul className="text-[11px] md:text-xs font-light text-zinc-500 space-y-2 mb-6 opacity-90 group-hover:opacity-100 transition-opacity duration-500 flex-1">
                 {info.history.map((item: string, i: number) => (
                     <li key={i} className="flex gap-2.5">
-                        <span className="text-[#ab9885] mt-[1px]">•</span> <span className="tracking-wide">{item}</span>
+                        <span className="text-[#bea396] mt-[1px]">??/span> <span className="tracking-wide">{item}</span>
                     </li>
                 ))}
             </ul>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-4 border-t border-zinc-200/80">
-                <p className="text-[11px] font-semibold text-[#8f775f] tracking-wide">{info.tags}</p>
+                <p className="text-[11px] font-semibold text-[#a68377] tracking-wide">{info.tags}</p>
                 <a
                     href={`https://instagram.com/${info.insta.replace('@', '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] md:text-[11px] font-medium text-zinc-400 group-hover:text-[#ab9885] transition-colors hover:underline"
+                    className="text-[10px] md:text-[11px] font-medium text-zinc-400 group-hover:text-[#bea396] transition-colors hover:underline"
                 >
                     {info.insta}
                 </a>
@@ -130,7 +130,7 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
 
 export default function Instructors() {
     return (
-        <section id="instructors" className="bg-[#faf9f7] py-24 md:py-32">
+        <section id="instructors" className="bg-[#fdfbf9] py-24 md:py-32">
             <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -139,20 +139,20 @@ export default function Instructors() {
                     transition={{ duration: 0.8 }}
                     className="mb-16 md:mb-24 text-center"
                 >
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#ab9885] mb-4">INSTRUCTORS</p>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-4">INSTRUCTORS</p>
                     <h2 className="font-display text-3xl md:text-5xl text-zinc-900 leading-tight">
                         Our Professionals
                     </h2>
                     <p className="mt-6 text-sm font-light text-zinc-500 max-w-2xl mx-auto">
-                        당신의 안전과 성장을 위해 아뮤즈 스튜디오가 자랑하는 최고의 강사진을 소개합니다.<br className="hidden md:block" />
-                        개인이 가진 체형과 난이도에 맞춘 디테일한 티칭을 경험해 보세요.
+                        ?뱀떊???덉쟾怨??깆옣???꾪빐 ?꾨?利??ㅽ뒠?붿삤媛 ?먮옉?섎뒗 理쒓퀬??媛뺤궗吏꾩쓣 ?뚭컻?⑸땲??<br className="hidden md:block" />
+                        媛쒖씤??媛吏?泥댄삎怨??쒖씠?꾩뿉 留욎텣 ?뷀뀒?쇳븳 ?곗묶??寃쏀뿕??蹂댁꽭??
                     </p>
                 </motion.div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">안양점</h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">?덉뼇??/h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">
@@ -164,7 +164,7 @@ export default function Instructors() {
 
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">신림점</h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">?좊┝??/h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">

@@ -34,7 +34,7 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="about" className="relative bg-[#faf9f7] py-32 md:py-48" aria-label="필로소피">
+    <section id="about" className="relative bg-[#fdfbf9] py-32 md:py-48" aria-label="필로소피">
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-24 md:mb-32">
@@ -45,7 +45,7 @@ export default function About() {
             transition={{ duration: 1 }}
             className="md:max-w-2xl"
           >
-            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#ab9885] mb-6">Philosophy</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-6">Philosophy</p>
             <h2 className="font-display text-4xl leading-[1.2] text-zinc-900 md:text-6xl lg:text-[4.5rem]">
               Aspace where<br className="hidden md:block" /> body and mind smile
             </h2>
@@ -72,7 +72,7 @@ export default function About() {
               transition={{ duration: 0.8, delay: i * 0.15 + 0.2 }}
               className="group flex flex-col items-start"
             >
-              <div className="h-[1px] w-full bg-zinc-200 mb-8 transition-colors duration-500 group-hover:bg-[#ab9885] scale-x-0 group-hover:scale-x-100 origin-left" style={{ transform: "scaleX(1)" }} />
+              <div className="h-[1px] w-full bg-zinc-200 mb-8 transition-colors duration-500 group-hover:bg-[#bea396] scale-x-0 group-hover:scale-x-100 origin-left" style={{ transform: "scaleX(1)" }} />
               <h3 className="font-display text-2xl text-zinc-900 mb-2">{item.title}</h3>
               <p className="text-[12px] font-medium tracking-wide text-zinc-500 mb-6">{item.subtitle}</p>
               <p className="text-sm font-light leading-relaxed text-zinc-600">
