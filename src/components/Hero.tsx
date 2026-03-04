@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         {/* Mobile Background */}
         <img
-          src="/images/hero_mobile.jpeg"
+          src="/images/hero-mobile-new.jpeg"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가 (모바일)"
           className="block h-full w-full object-cover object-center md:hidden"
           loading="eager"
@@ -19,7 +19,7 @@ export default function Hero() {
         />
         {/* Desktop Background */}
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero-new.jpeg"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가"
           className="hidden h-full w-full object-cover object-center lg:object-center md:block" // Removed object-[15%_center] as now mobile has its own image and desktop should center normally.
           loading="eager"
