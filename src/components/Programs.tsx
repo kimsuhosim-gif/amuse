@@ -49,7 +49,7 @@ export default function Programs() {
                             transition={{ duration: 0.8, delay: i * 0.2 }}
                             className="group cursor-pointer flex flex-col"
                         >
-                            <div className="relative aspect-[3/4] w-full overflow-hidden mb-8">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden mb-8 rounded-[2rem] border border-zinc-100/50 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
                                 <Image
                                     src={prog.img}
                                     alt={prog.title}
