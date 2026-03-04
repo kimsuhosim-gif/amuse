@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         {/* Mobile Background */}
         <img
-          src="/images/hero-mobile.jpeg"
+          src="/images/hero_mobile.png"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가 (모바일)"
           className="block h-full w-full object-cover object-center md:hidden"
           loading="eager"
@@ -28,8 +28,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/30" />
       </div>
 
-      {/* Logo */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center -mt-10 md:mt-0 px-4">
+      {/* Logo (Hidden on mobile since hero_mobile.png has logo built-in) */}
+      <div className="absolute inset-0 hidden md:flex flex-col items-center justify-center px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
