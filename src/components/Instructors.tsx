@@ -8,70 +8,70 @@ import Image from "next/image";
 const instructors = {
     anyang: [
         {
-            name: "源?쒖븘 (SEOA)",
-            role: "???/ ?덉뼇???먯옣",
+            name: "김세아 (SEOA)",
+            role: "대표 / 안양점 원장",
             image: "/images/instructors/seo_a.jpg",
-            quote: "嫄닿컯怨??됰났???꾪븳 ?ㅽ뒠?붿삤濡?n?댁쁺?섍쿋?듬땲??,
+            quote: "건강하고 행복한 스튜디오로\n운영하겠습니다",
             history: [
                 "2010 RELAX YOGA, HOT YOGA",
                 "2010 VINYASA YOGA, AERIAL YOGA",
-                "2011 ?앺솢泥댁쑁吏?꾩옄 2湲?蹂대뵒鍮뚮뵫",
-                "2012 ?쇱뒪?먰듃?덉씠??TTC ?섎즺",
-                "2013 BASTM ?곕?議곗쭅 ?뚮씪???섎즺",
-                "2013~15 ?섎컮肄붾━??諛?媛곸쥌 ?쇳듃?덉뒪????낆긽",
-                "2014 ?ㅼ씠?댄듃 ?꾩떆???띾낫紐⑤뜽",
-                "2014 PEAK PILATES (?대옒???꾨씪?뚯뒪)",
-                "2015 ?곗쟾 ?고썑 ?꾩궛遺 ?꾨씪?뚯뒪 援먯쑁媛뺤궗",
-                "2015 紐⑤뜕?꾨씪?뚯뒪 援먯쑁媛뺤궗",
-                "2019 ?대똾??2湲?+ 1湲?,
-                "2023 ???꾨?利??대똾???뚮씪?됱슂媛 ???,
+                "2011 생활체육지도자 2급 보디빌딩",
+                "2012 퍼스트트레이너 TTC 수료",
+                "2013 BASTM 연부조직 가동술 수료",
+                "2013~15 나바코리아 및 각종 피트니스대회 입상",
+                "2014 다이어트 도시락 홍보모델",
+                "2014 PEAK PILATES (클래식 필라테스)",
+                "2015 산전 산후 임산부 필라테스 교육강사",
+                "2015 모던필라테스 교육강사",
+                "2019 폴댄스 2급 + 1급",
+                "2023 현 아뮤즈 폴댄스 & 에어리얼요가 대표",
             ],
-            tags: "#ISFP #?먯옣??#移?갔媛먯삦",
+            tags: "#ISFP #원장님 #칭찬감옥",
             insta: "@SSEOAKIMN",
         },
         {
-            name: "?대???(YONI)",
-            role: "?덉뼇??媛뺤궗",
+            name: "이유니 (YONI)",
+            role: "안양점 강사",
             image: "/images/instructors/yoni.jpg",
-            quote: "移쒖젅?섍퀬 紐낇솗??由щ뜑?쎌쑝濡?n?먮꼫吏瑜??꾪븯??媛뺤궗?낅땲??,
+            quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
             history: [
-                "2021 ?대똾???꾨Ц媛 3湲?+ 2湲?,
-                "2021 ?대똾??吏?꾩옄 ?섎즺",
-                "2024 ?꾨씪?뚯뒪 吏?꾩옄 ?섎즺",
-                "2021 ?⑦뤃?꾩뒪 ?좎떎?덈궡??媛뺤궗",
-                "2023 ???꾨?利??대똾???뚮씪?됱슂媛 ?ㅽ뒠?붿삤 媛뺤궗",
+                "2021 폴댄스 전문가 3급 + 2급",
+                "2021 폴댄스 지도자 수료",
+                "2024 필라테스 지도자 수료",
+                "2021 하이폴댄스 서실장내외 강사",
+                "2023 현 아뮤즈 폴댄스 & 에어리얼요가 스튜디오 강사",
             ],
-            tags: "#INFJ #?붾땲T #移쒖젅??,
+            tags: "#INFJ #요니T #친절함",
             insta: "@POLLERINA_YONI",
         },
         {
-            name: "理쒖쑀??(YU HYUN)",
-            role: "?덉뼇??媛뺤궗",
-            quote: "?좎뿰??紐? ?몄븞??留덉쓬.\n湲곕텇 醫뗭? 蹂?붾? ?좊Ъ?섎뒗 媛뺤궗?낅땲??,
+            name: "최유현 (YU HYUN)",
+            role: "안양점 강사",
+            quote: "유연한 몸, 평온한 마음.\n기분 좋은 변화를 선물하는 강사입니다",
             history: [
-                "2018 ?붽? 吏?꾩옄 ?섎즺",
-                "2022 ?대똾??2湲??섎즺",
-                "2023 ?대똾??吏?꾩옄 ?섎즺",
-                "2024 ??쇳뤃?꾩뒪 媛뺤궗",
-                "2025 ???꾨?利??대똾???뚮씪?됱슂媛 媛뺤궗",
+                "2018 요가 지도자 수료",
+                "2022 폴댄스 2급 수료",
+                "2023 폴댄스 지도자 수료",
+                "2024 대한폴댄스 강사",
+                "2025 현 아뮤즈 폴댄스 & 에어리얼요가 강사",
             ],
-            tags: "#ISFP #?좏쁽T #?꾨?利덊옒臾몄뼱",
+            tags: "#ISFP #유현T #아뮤즈할머니",
             insta: "@POLE_YUHYUN",
         },
     ],
     sillim: [
         {
-            name: "源?쒖븞 (SEOAN)",
-            role: "?좊┝???먯옣",
+            name: "김세안 (SEOAN)",
+            role: "신림점 원장",
             image: "/images/instructors/seo_an.jpg",
-            quote: "?뱀떊???대똾?ㅺ? ?덉닠???????덇쾶,\n?ъ꽭?섍쾶 ?뷀뀒?쇱쓣 吏?꾪빀?덈떎",
+            quote: "당신의 폴댄스가 예술이 될 수 있게,\n섬세하게 디테일을 지도합니다",
             history: [
-                "2022 KBPF ?꾨Ц媛 2湲??섎즺",
-                "2023 KBPF ?꾨Ц媛 1湲??섎즺",
-                "2024 ???ㅽ븯???대똾??媛뺣궓??媛뺤궗",
-                "2025 ???꾨?利??대똾???뚮씪?됱슂媛 ?덉뼇???좊┝??媛뺤궗",
+                "2022 KBPF 전문가 2급 수료",
+                "2023 KBPF 전문가 1급 수료",
+                "2024 현 스타하폴댄스 강남점 강사",
+                "2025 현 아뮤즈 폴댄스 & 에어리얼요가 안양점 신림점 강사",
             ],
-            tags: "#ENFJ #?쒖븞T #?뷀뀒??#?댁븘??,
+            tags: "#ENFJ #세안T #디테일 #우아함",
             insta: "@SEOAN_POLE",
         },
     ],
@@ -109,7 +109,7 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
             <ul className="text-[11px] md:text-xs font-light text-zinc-500 space-y-2 mb-6 opacity-90 group-hover:opacity-100 transition-opacity duration-500 flex-1">
                 {info.history.map((item: string, i: number) => (
                     <li key={i} className="flex gap-2.5">
-                        <span className="text-[#bea396] mt-[1px]">??/span> <span className="tracking-wide">{item}</span>
+                        <span className="text-[#bea396] mt-[1px]">•</span> <span className="tracking-wide">{item}</span>
                     </li>
                 ))}
             </ul>
@@ -144,15 +144,15 @@ export default function Instructors() {
                         Our Professionals
                     </h2>
                     <p className="mt-6 text-sm font-light text-zinc-500 max-w-2xl mx-auto">
-                        ?뱀떊???덉쟾怨??깆옣???꾪빐 ?꾨?利??ㅽ뒠?붿삤媛 ?먮옉?섎뒗 理쒓퀬??媛뺤궗吏꾩쓣 ?뚭컻?⑸땲??<br className="hidden md:block" />
-                        媛쒖씤??媛吏?泥댄삎怨??쒖씠?꾩뿉 留욎텣 ?뷀뀒?쇳븳 ?곗묶??寃쏀뿕??蹂댁꽭??
+                        당신의 안전과 성장을 위해 아뮤즈 스튜디오가 자랑하는 최고의 강사진을 소개합니다.<br className="hidden md:block" />
+                        개인이 가진 체형과 쉐이프에 맞춘 디테일한 코칭을 경험해 보세요.
                     </p>
                 </motion.div>
 
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">?덉뼇??/h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">안양 본점</h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">
@@ -164,7 +164,7 @@ export default function Instructors() {
 
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">?좊┝??/h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">신림 2호점</h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">
