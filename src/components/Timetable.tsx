@@ -161,7 +161,7 @@ export default function Studios() {
         </div>
 
         {/* Content Area */}
-        <div className="grid gap-12 lg:gap-16 lg:grid-cols-[0.8fr_1fr_1.2fr]">
+        <div className="flex flex-col lg:grid lg:gap-16 lg:grid-cols-[0.8fr_1fr_1.2fr] gap-12">
           {/* Image */}
           <AnimatePresence mode="wait">
             <motion.div
@@ -170,7 +170,7 @@ export default function Studios() {
               animate={{ opacity: 1, filter: "blur(0px)", scale: 1 }}
               exit={{ opacity: 0, filter: "blur(10px)", scale: 1.05 }}
               transition={{ duration: 0.7, ease: "easeInOut" }}
-              className="relative aspect-[3/4] lg:aspect-auto lg:h-[650px] w-full overflow-hidden rounded-[2rem] border border-zinc-800/80 shadow-[0_0_50px_rgba(0,0,0,0.5)] group"
+              className="relative aspect-[4/3] sm:aspect-[3/4] lg:aspect-auto lg:h-[650px] w-full overflow-hidden rounded-[2rem] border border-zinc-800/80 shadow-[0_0_50px_rgba(0,0,0,0.5)] group order-1 lg:order-none"
             >
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10 pointer-events-none opacity-50 transition-opacity duration-700 group-hover:opacity-0" />
               <Image
@@ -191,7 +191,7 @@ export default function Studios() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex flex-col justify-center"
+              className="flex flex-col justify-center order-2 lg:order-none"
             >
               <h3 className="font-sans font-extrabold text-3xl text-white mb-2 tracking-tight">{info.label} Studio</h3>
               <p className="text-[13px] font-semibold text-[#bea396] mb-12">{info.subName}</p>
@@ -222,8 +222,8 @@ export default function Studios() {
                 </article>
               </div>
 
-              <div className="mt-16 pt-8 border-t border-zinc-900 leading-none">
-                <a href={info.mapUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-6 py-4 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black group">
+              <div className="mt-12 lg:mt-16 pt-8 border-t border-zinc-900 leading-none">
+                <a href={info.mapUrl} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto items-center justify-center gap-3 px-6 py-4 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold uppercase tracking-widest text-white transition-all duration-300 hover:bg-white hover:text-black group">
                   <span>View on Naver Map</span>
                   <ExternalLink strokeWidth={2} size={14} className="opacity-50 group-hover:opacity-100 transition-opacity" />
                 </a>
@@ -239,7 +239,7 @@ export default function Studios() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col justify-center lg:pl-10"
+              className="flex flex-col justify-center lg:pl-10 order-3 lg:order-none"
             >
               <div className="bg-[#1a1a1a]/50 border border-zinc-800/80 rounded-[2rem] p-6 sm:p-8 backdrop-blur-sm">
                 <div className="flex items-center justify-between mb-8">
