@@ -19,32 +19,16 @@ export default function Hero() {
         />
         {/* Desktop Background */}
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero.png"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가"
           className="hidden h-full w-full object-cover object-center lg:object-center md:block" // Removed object-[15%_center] as now mobile has its own image and desktop should center normally.
           loading="eager"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
 
-      {/* Logo (Hidden on mobile since hero_mobile.png has logo built-in) */}
-      <div className="absolute inset-0 hidden md:flex flex-col items-center justify-center px-4">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <div className="relative w-[220px] h-[220px] md:w-[280px] md:h-[280px]"
-            style={{ mixBlendMode: "screen" }}>
-            <img
-              src="/images/logo.jpg"
-              alt="AMUSE Studio Logo"
-              className="w-full h-full object-contain invert"
-            />
-          </div>
-        </motion.div>
-      </div>
+
 
       {/* Scroll Indicator */}
       <motion.div
