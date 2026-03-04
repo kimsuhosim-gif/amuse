@@ -8,7 +8,7 @@ import Image from "next/image";
 const instructors = {
     anyang: [
         {
-            name: "김세아 (SEOA)",
+            name: "김서아 (SEO_A)",
             role: "대표 / 안양점 원장",
             image: "/images/instructors/seo_a.jpg",
             quote: "건강하고 행복한 스튜디오로\n운영하겠습니다",
@@ -30,7 +30,7 @@ const instructors = {
             insta: "@SSEOAKIMN",
         },
         {
-            name: "이유니 (YONI)",
+            name: "이미연 (MIYEON)",
             role: "안양점 강사",
             image: "/images/instructors/yoni.jpg",
             quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
@@ -42,7 +42,7 @@ const instructors = {
                 "2023 현 아뮤즈 폴댄스 & 에어리얼요가 스튜디오 강사",
             ],
             tags: "#INFJ #요니T #친절함",
-            insta: "@POLLERINA_YONI",
+            insta: "@AMUSE_MIYEON",
         },
         {
             name: "최유현 (YU HYUN)",
@@ -61,7 +61,7 @@ const instructors = {
     ],
     sillim: [
         {
-            name: "김세안 (SEOAN)",
+            name: "김서안 (SEOAN)",
             role: "신림점 원장",
             image: "/images/instructors/seo_an.jpg",
             quote: "당신의 폴댄스가 예술이 될 수 있게,\n섬세하게 디테일을 지도합니다",
