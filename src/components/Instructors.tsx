@@ -3,12 +3,14 @@
 // file: src/components/Instructors.tsx
 import { motion } from "framer-motion";
 import { User2, MoveRight } from "lucide-react";
+import Image from "next/image";
 
 const instructors = {
     anyang: [
         {
             name: "김서아 (SEOA)",
             role: "대표 / 안양점 원장",
+            image: "/images/instructors/seo_a.jpg",
             quote: "건강과 행복을 위한 스튜디오로\n운영하겠습니다",
             history: [
                 "2010 RELAX YOGA, HOT YOGA",
@@ -30,6 +32,7 @@ const instructors = {
         {
             name: "이미연 (YONI)",
             role: "안양점 강사",
+            image: "/images/instructors/yoni.jpg",
             quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
             history: [
                 "2021 폴댄스 전문가 3급 + 2급",
@@ -60,6 +63,7 @@ const instructors = {
         {
             name: "김서안 (SEOAN)",
             role: "안양점/신림점 강사",
+            image: "/images/instructors/seo_an.jpg",
             quote: "당신의 폴댄스가 예술이 될 수 있게,\n섬세하게 디테일을 지도합니다",
             history: [
                 "2022 KBPF 전문가 2급 수료",
@@ -86,7 +90,11 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
 
         <div className="flex gap-5 items-center">
             <div className="flex-shrink-0 relative overflow-hidden bg-zinc-50 group-hover:bg-[#ab9885]/10 transition-colors duration-500 rounded-full w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
-                <User2 className="text-zinc-300 group-hover:text-[#ab9885] transition-colors duration-500 w-6 h-6 md:w-8 md:h-8" />
+                {info.image ? (
+                    <Image src={info.image} alt={info.name} fill className="object-cover" />
+                ) : (
+                    <User2 className="text-zinc-300 group-hover:text-[#ab9885] transition-colors duration-500 w-6 h-6 md:w-8 md:h-8" />
+                )}
             </div>
             <div className="flex flex-col justify-center z-10 pr-6">
                 <h4 className="font-display text-lg md:text-xl text-zinc-900 group-hover:text-[#a08b76] transition-colors duration-500 whitespace-nowrap">{info.name}</h4>
