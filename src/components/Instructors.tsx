@@ -130,14 +130,14 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
 
 export default function Instructors() {
     return (
-        <section id="instructors" className="bg-[#fdfbf9] py-24 md:py-32">
+        <section id="instructors" className="bg-[#fdfbf9] py-16 md:py-32">
             <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 0.8 }}
-                    className="mb-16 md:mb-24 text-center"
+                    className="mb-10 md:mb-24 text-center"
                 >
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-4">INSTRUCTORS</p>
                     <h2 className="font-display text-3xl md:text-5xl text-zinc-900 leading-tight">

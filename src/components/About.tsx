@@ -34,10 +34,10 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="about" className="relative bg-[#fdfbf9] py-32 md:py-48" aria-label="필로소피">
+    <section id="about" className="relative bg-[#fdfbf9] py-16 md:py-48" aria-label="필로소피">
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-24 md:mb-32">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-12 md:mb-32">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export default function About() {
         </div>
 
         {/* Philosophy Grid */}
-        <div className="grid gap-x-8 gap-y-16 mt-20 md:grid-cols-3">
+        <div className="grid gap-x-8 gap-y-10 mt-12 md:grid-cols-3">
           {philosophyItems.map((item, i) => (
             <motion.article
               key={i}

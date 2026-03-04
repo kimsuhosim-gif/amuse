@@ -23,14 +23,14 @@ const programs = [
 
 export default function Programs() {
     return (
-        <section id="programs" className="bg-white py-32 md:py-48">
+        <section id="programs" className="bg-white py-16 md:py-48">
             <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
                     transition={{ duration: 1 }}
-                    className="mb-20 md:mb-32 flex flex-col items-center text-center"
+                    className="mb-12 md:mb-32 flex flex-col items-center text-center"
                 >
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-6">Programs</p>
                     <h2 className="font-display text-4xl leading-[1.2] text-zinc-900 md:text-5xl lg:text-6xl">
