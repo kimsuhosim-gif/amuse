@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden" aria-label="메인 소개">
       {/* Background - Real high-res photo (4K), NOT AI generated */}
       <div className="absolute inset-0">
-        {/* Mobile Background */}
+        {/* Mobile Background
         <img
           src="/images/hero_mobile.png"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가 (모바일)"
@@ -17,7 +17,8 @@ export default function Hero() {
           loading="eager"
           fetchPriority="high"
         />
-        {/* Desktop Background */}
+        */}
+        {/* Desktop Background
         <img
           src="/images/hero.png"
           alt="아뮤즈 스튜디오 - 폴댄스 & 에어리얼 요가"
@@ -25,6 +26,7 @@ export default function Hero() {
           loading="eager"
           fetchPriority="high"
         />
+        */}
         <div className="absolute inset-0 bg-black/10" />
       </div>
 
