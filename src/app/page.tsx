@@ -2,7 +2,7 @@
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
-import Programs from "@/components/Programs";
+import BentoGrid from "@/components/BentoGrid";
 import Studios from "@/components/Timetable";
 import Instructors from "@/components/Instructors";
 import Review from "@/components/Review";
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Marquee />
       <About />
-      <Programs />
+      <BentoGrid />
       <Studios />
       <Instructors />
       <Review />
