@@ -62,7 +62,7 @@ const instructors = {
     sillim: [
         {
             name: "김서안 (SEOAN)",
-            role: "안양점/신림점 강사",
+            role: "신림점 원장",
             image: "/images/instructors/seo_an.jpg",
             quote: "당신의 폴댄스가 예술이 될 수 있게,\n섬세하게 디테일을 지도합니다",
             history: [
@@ -152,7 +152,7 @@ export default function Instructors() {
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-display text-2xl text-zinc-800">Anyang Studio</h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">안양점</h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">
@@ -164,7 +164,7 @@ export default function Instructors() {
 
                     <div>
                         <div className="mb-8 flex items-center gap-4">
-                            <h3 className="font-display text-2xl text-zinc-800">Sillim Studio</h3>
+                            <h3 className="font-sans font-extrabold text-2xl text-zinc-800 tracking-tight">신림점</h3>
                             <div className="h-[1px] flex-1 bg-zinc-200"></div>
                         </div>
                         <div className="flex flex-col gap-6">
