@@ -78,9 +78,7 @@ export default function Home() {
       <div className="defer-section">
         <Footer />
       </div>
-      <div className="defer-section">
-        <MobileCTA />
-      </div>
+      <MobileCTA />
       <PremiumEffects />
     </main>
   );
