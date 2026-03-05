@@ -2,18 +2,18 @@
 
 // file: src/components/Navbar.tsx
 import Link from "next/link";
-import { Instagram } from "lucide-react";
+import { ArrowUpRight, Instagram } from "lucide-react";
 
 import { useState, useEffect } from "react";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "브랜드 철학", href: "#about" },
-  { label: "프로그램", href: "#programs" },
-  { label: "지점 안내", href: "#studios" },
-  { label: "강사진", href: "#instructors" },
-  { label: "후기", href: "#reviews" },
+  { label: "브랜드 철학", href: "#about", sub: "아뮤즈가 지향하는 가치" },
+  { label: "프로그램", href: "#programs", sub: "폴댄스 · 플라잉요가 안내" },
+  { label: "지점 안내", href: "#studios", sub: "안양/신림 위치와 시간표" },
+  { label: "강사진", href: "#instructors", sub: "전문 강사진 프로필" },
+  { label: "후기", href: "#reviews", sub: "회원님들의 실제 수강 후기" },
 ];
 
 export default function Navbar() {
@@ -131,25 +131,45 @@ export default function Navbar() {
             className="fixed inset-0 top-[60px] z-40 h-[calc(100dvh-60px)] w-full bg-white px-6 py-12 md:hidden"
             id="mobile-menu-panel"
           >
-            <div className="flex flex-col gap-8">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_8%,rgba(190,163,150,0.2),transparent_36%),radial-gradient(circle_at_88%_88%,rgba(190,163,150,0.14),transparent_34%),linear-gradient(180deg,#fcf8f4_0%,#f7f3ef_100%)]" />
+            <div className="relative z-10 flex h-full flex-col">
+              <div className="mb-8 rounded-2xl border border-[#dfd4cc] bg-white/75 px-5 py-4 backdrop-blur-sm shadow-[0_18px_35px_-28px_rgba(54,41,28,0.35)]">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#a68377]">Quick Menu</p>
+                <p className="mt-1 text-sm text-zinc-600">원하는 섹션으로 바로 이동하세요.</p>
+              </div>
+
+              <div className="flex flex-col gap-3">
               {navItems.map((item, idx) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex flex-col"
+                  className="group"
                 >
                   <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: idx * 0.05 }}
-                    className="flex items-baseline gap-4"
+                    className="flex items-center justify-between rounded-2xl border border-[#e5dbd3] bg-white/80 px-4 py-4 shadow-[0_12px_30px_-24px_rgba(44,34,25,0.38)] transition-all duration-300 group-hover:-translate-y-[1px] group-hover:border-[#cab6a7] group-hover:bg-white"
                   >
-                    <span className="text-[10px] font-bold text-[#bea396]">0{idx + 1}</span>
-                    <span className="font-sans text-[2rem] font-bold text-zinc-900 tracking-[-0.01em]">{item.label}</span>
+                    <div className="flex items-center gap-4">
+                      <span className="text-[11px] font-bold tracking-[0.08em] text-[#b39d90]">0{idx + 1}</span>
+                      <div className="flex flex-col">
+                        <span className="font-sans text-[1.9rem] font-extrabold leading-[1.06] tracking-[-0.02em] text-zinc-900">{item.label}</span>
+                        <span className="mt-1 text-[11px] text-zinc-500">{item.sub}</span>
+                      </div>
+                    </div>
+                    <ArrowUpRight size={18} className="text-zinc-400 transition-colors group-hover:text-[#a68377]" />
                   </motion.div>
                 </Link>
               ))}
+
+              </div>
+
+              <div className="mt-auto flex items-center justify-between border-t border-[#ddd3cb] pt-5 text-[11px] text-zinc-500">
+                <span className="tracking-[0.12em] uppercase">AMUSE AERIAL STUDIO</span>
+                <span className="text-[#9f8677]">Premium Class</span>
+              </div>
             </div>
           </motion.div>
         )}
