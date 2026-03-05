@@ -155,7 +155,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-4">
                       <span className="text-[11px] font-bold tracking-[0.08em] text-[#b39d90]">0{idx + 1}</span>
                       <div className="flex flex-col">
-                        <span className="font-sans text-[1.9rem] font-extrabold leading-[1.06] tracking-[-0.02em] text-zinc-900">{item.label}</span>
+                        <span className="font-sans text-[1.72rem] font-extrabold leading-[1.08] tracking-[-0.02em] text-zinc-900">{item.label}</span>
                         <span className="mt-1 text-[11px] text-zinc-500">{item.sub}</span>
                       </div>
                     </div>

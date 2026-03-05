@@ -40,7 +40,7 @@ const reviews = [
 
 export default function Review() {
   return (
-    <section id="reviews" className="bg-[#f6f4f1] py-32 md:py-48 relative overflow-hidden" aria-label="회원 리뷰">
+    <section id="reviews" className="bg-[#f6f4f1] py-20 md:py-40 relative overflow-hidden" aria-label="회원 리뷰">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#bea396]/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
@@ -56,10 +56,12 @@ export default function Review() {
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[1px] bg-[#bea396]"></div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396]">Real Stories</p>
+              <p className="section-eyebrow">Real Stories</p>
             </div>
-            <h2 className="font-display text-4xl leading-[1.15] text-zinc-900 md:text-5xl lg:text-7xl">
-              Voices from our<br /> <span className="text-[#bea396] italic font-light">members</span>
+            <h2 className="section-title">
+              회원님들이 직접 남긴
+              <br />
+              <span className="text-[#bea396] italic font-light">진짜 수강 후기</span>
             </h2>
           </motion.div>
 

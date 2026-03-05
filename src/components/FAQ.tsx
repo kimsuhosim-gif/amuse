@@ -32,7 +32,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-white py-32 md:py-48 relative overflow-hidden" aria-label="자주 묻는 질문">
+    <section id="faq" className="bg-white py-20 md:py-40 relative overflow-hidden" aria-label="자주 묻는 질문">
       {/* Background Decor */}
       <div className="absolute left-0 bottom-0 w-[600px] h-[600px] bg-[#bea396]/5 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
@@ -48,14 +48,16 @@ export default function FAQ() {
           >
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-[1px] bg-[#bea396]"></div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396]">FAQ</p>
+              <p className="section-eyebrow">FAQ</p>
             </div>
 
-            <h2 className="font-display text-4xl leading-[1.15] text-zinc-900 md:text-5xl lg:text-6xl mb-8">
-              Before your<br /> <span className="text-[#bea396] italic font-light">first flight</span>
+            <h2 className="section-title mb-6">
+              시작 전 가장 많이 묻는
+              <br />
+              <span className="text-[#bea396] italic font-light">핵심 질문</span>
             </h2>
 
-            <p className="text-[15px] font-light leading-[1.8] text-zinc-500 mb-12 max-w-md">
+            <p className="section-lead mb-10 max-w-md">
               처음 시작하시는 분들이 가장 많이 궁금해하시는 질문들을 모았습니다.
             </p>
           </motion.div>

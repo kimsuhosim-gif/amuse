@@ -23,7 +23,7 @@ const programs = [
 
 export default function Programs() {
     return (
-        <section id="programs" className="bg-white py-16 md:py-48">
+        <section id="programs" className="bg-white py-20 md:py-40">
             <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -32,9 +32,11 @@ export default function Programs() {
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     className="mb-12 md:mb-32 flex flex-col items-center text-center"
                 >
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-6">Programs</p>
-                    <h2 className="font-display text-4xl leading-[1.2] text-zinc-900 md:text-5xl lg:text-6xl">
-                        Awaken your<br />hidden elegance
+                    <p className="section-eyebrow mb-5">Programs</p>
+                    <h2 className="section-title">
+                        나에게 맞는 방식으로
+                        <br />
+                        시작하는 에어리얼 클래스
                     </h2>
                 </motion.div>
 
@@ -66,12 +68,17 @@ export default function Programs() {
                             <p className="text-sm font-light leading-relaxed text-zinc-500 mb-6 flex-1">
                                 {prog.desc}
                             </p>
-                            <a href="#studios" className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#a68377] group-hover:text-zinc-900 transition-colors duration-500 w-fit">
-                                <span>전체 시간표 보기</span>
-                                <span className="transform transition-transform duration-500 group-hover:translate-x-1">&rarr;</span>
-                            </a>
                         </motion.div>
                     ))}
+                </div>
+                <div className="mt-12 flex justify-center">
+                    <a
+                        href="#studios"
+                        className="inline-flex items-center gap-2 rounded-xl border border-[#d8c8bc] bg-[#fbf7f4] px-6 py-3 text-[12px] font-semibold tracking-[0.08em] text-[#8d6f5f] transition hover:border-[#b79683] hover:bg-white hover:text-zinc-900"
+                    >
+                        전체 시간표 보기
+                        <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
         </section >

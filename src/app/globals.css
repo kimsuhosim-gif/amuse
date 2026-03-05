@@ -154,6 +154,28 @@ h6,
   color: #5e4a3d;
 }
 
+.section-eyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a68377;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.05rem, 5.7vw, 4.4rem);
+  line-height: 1.14;
+  color: #1e1c1a;
+}
+
+.section-lead {
+  font-size: clamp(0.98rem, 1.2vw, 1.06rem);
+  line-height: 1.82;
+  color: #66615b;
+  font-weight: 300;
+}
+
 .kicker-invert {
   font-size: 0.65rem;
   letter-spacing: 0.22em;
