@@ -13,7 +13,7 @@ export default function Hero() {
         {/* Desktop Image */}
         <div className="hidden md:block absolute inset-0">
           <Image
-            src="/images/hero.png"
+            src="/images/hero-final-v1.png"
             alt="Amuse Aerial Studio Hero"
             fill
             priority
@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Mobile Image */}
         <div className="md:hidden absolute inset-0">
           <Image
-            src="/images/hero_mobile.png"
+            src="/images/hero-mobile-final-v1.png"
             alt="Amuse Aerial Studio Hero Mobile"
             fill
             priority
