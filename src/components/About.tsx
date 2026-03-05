@@ -9,7 +9,7 @@ const philosophyItems = [
   {
     title: "The Safest Environment",
     subtitle: "프리미엄 안전 시공",
-    description: "국내 유일하게 정품 안전 매트를 전면 사용하며 유러피안 루핏폴을 설치하여 체력에 온전히 집중할 수 있는 안전한 환경을 제공합니다.",
+    description: "정품 안전 매트를 전면 사용하며 유러피안 루핏폴을 설치하여 체력에 온전히 집중할 수 있는 안전한 환경을 제공합니다.",
   },
   {
     title: "Dedicated to You",
