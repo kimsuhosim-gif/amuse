@@ -30,7 +30,7 @@ const instructors = {
             insta: "@SSEOAKIMN",
         },
         {
-            name: "이미연 (MIYEON)",
+            name: "이미연 (YONI)",
             role: "안양점 강사",
             image: "/images/instructors/yoni.jpg",
             quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
@@ -38,10 +38,10 @@ const instructors = {
                 "2021 폴댄스 전문가 3급 + 2급",
                 "2021 폴댄스 지도자 수료",
                 "2024 필라테스 지도자 수료",
-                "2021 하이폴댄스 서실장내외 강사",
+                "2021 온폴댄스 잠실새내점 강사",
                 "2023 현 아뮤즈 폴댄스 & 플라잉요가 스튜디오 강사",
             ],
-            tags: "#INFJ #요니T #친절함",
+            tags: "#INFJ #요니T #친절퀸",
             insta: "@AMUSE_MIYEON",
         },
         {
