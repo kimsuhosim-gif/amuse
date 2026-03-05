@@ -29,7 +29,7 @@ export default function Programs() {
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     className="mb-12 md:mb-32 flex flex-col items-center text-center"
                 >
                     <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#bea396] mb-6">Programs</p>
@@ -74,6 +74,6 @@ export default function Programs() {
                     ))}
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
