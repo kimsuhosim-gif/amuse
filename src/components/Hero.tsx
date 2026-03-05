@@ -2,36 +2,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
-
 
 export default function Hero() {
   return (
     <section className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden" aria-label="메인 소개">
-      {/* Background - Real high-res photo (4K), NOT AI generated */}
       <div className="absolute inset-0">
-        {/* Desktop Image */}
-        <div className="hidden md:block absolute inset-0">
-          <Image
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/images/hero-mobile-final-v1.png" />
+          <img
             src="/images/hero-final-v1.png"
             alt="Amuse Aerial Studio Hero"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="100vw"
+            fetchPriority="high"
+            className="h-full w-full object-cover object-center"
           />
-        </div>
-        {/* Mobile Image */}
-        <div className="md:hidden absolute inset-0">
-          <Image
-            src="/images/hero-mobile-final-v1.png"
-            alt="Amuse Aerial Studio Hero Mobile"
-            fill
-            priority
-            className="object-cover object-center"
-            sizes="100vw"
-          />
-        </div>
+        </picture>
         <div className="absolute inset-0 bg-black/5" />
       </div>
 

@@ -70,13 +70,13 @@ export default function Navbar() {
 
         <div className="flex items-center gap-6">
           <div className="hidden md:flex items-center gap-5 mr-2">
-            <a href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+            <a aria-label="아뮤즈 인스타그램 열기" href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
               <Instagram size={16} strokeWidth={1.5} />
             </a>
-            <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+            <a aria-label="아뮤즈 네이버 블로그 열기" href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
               BLOG
             </a>
-            <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
+            <a aria-label="아뮤즈 카카오 채널 열기" href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className={`text-[10px] uppercase tracking-[0.15em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"}`}>
               KAKAO
             </a>
           </div>
@@ -89,6 +89,7 @@ export default function Navbar() {
                 ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
                 : "border-white/40 text-white hover:bg-white hover:text-black"
                 }`}
+              aria-label="안양점 체험예약 페이지 열기"
             >
               안양 체험예약
             </a>
@@ -100,6 +101,7 @@ export default function Navbar() {
                 ? "border-zinc-900 text-zinc-900 hover:bg-zinc-900 hover:text-white"
                 : "border-white/40 text-white hover:bg-white hover:text-black"
                 }`}
+              aria-label="신림점 체험예약 페이지 열기"
             >
               신림 체험예약
             </a>
@@ -109,6 +111,9 @@ export default function Navbar() {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`md:hidden p-2 transition-colors ${isScrolled ? "text-zinc-900" : "text-white"}`}
+            aria-label={isMenuOpen ? "모바일 메뉴 닫기" : "모바일 메뉴 열기"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu-panel"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -124,6 +129,7 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.33, 1, 0.68, 1] }}
             className="fixed inset-0 top-[60px] z-40 h-[calc(100dvh-60px)] w-full bg-white px-6 py-12 md:hidden"
+            id="mobile-menu-panel"
           >
             <div className="flex flex-col gap-8">
               {navItems.map((item, idx) => (
@@ -149,6 +155,8 @@ export default function Navbar() {
                 <a
                   href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="네이버 지도 체험예약 페이지 열기"
                   className="flex items-center justify-center rounded-xl bg-zinc-900 py-5 text-[13px] font-bold text-white"
                 >
                   체험예약
@@ -156,6 +164,8 @@ export default function Navbar() {
                 <a
                   href="https://pf.kakao.com/_xdGyzxj"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="카카오 문의 채널 열기"
                   className="flex items-center justify-center rounded-xl bg-[#fae100] py-5 text-[13px] font-bold text-[#371d1e]"
                 >
                   카톡문의

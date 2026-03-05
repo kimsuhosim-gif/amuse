@@ -54,15 +54,33 @@ export default function Home() {
       />
       <Navbar />
       <Hero />
-      <Marquee />
-      <About />
-      <Programs />
-      <Studios />
-      <Instructors />
-      <Review />
-      <FAQ />
-      <Footer />
-      <MobileCTA />
+      <div className="defer-section">
+        <Marquee />
+      </div>
+      <div className="defer-section">
+        <About />
+      </div>
+      <div className="defer-section">
+        <Programs />
+      </div>
+      <div className="defer-section">
+        <Studios />
+      </div>
+      <div className="defer-section">
+        <Instructors />
+      </div>
+      <div className="defer-section">
+        <Review />
+      </div>
+      <div className="defer-section">
+        <FAQ />
+      </div>
+      <div className="defer-section">
+        <Footer />
+      </div>
+      <div className="defer-section">
+        <MobileCTA />
+      </div>
       <PremiumEffects />
     </main>
   );

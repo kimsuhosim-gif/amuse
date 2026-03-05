@@ -15,10 +15,10 @@ export default function Footer() {
               아뮤즈 폴댄스 & 플라잉요가 스튜디오.
             </p>
             <div className="flex items-center gap-4 mt-2">
-              <a href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">
+              <a aria-label="아뮤즈 인스타그램 열기" href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
-              <a href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
+              <a aria-label="아뮤즈 네이버 블로그 열기" href="https://blog.naver.com/amuseofficial" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
                 Blog
               </a>
             </div>
@@ -37,7 +37,7 @@ export default function Footer() {
                 <span>031-464-0101</span>
               </li>
               <li>
-                <a href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
+                <a aria-label="안양점 카카오 상담 열기" href="https://pf.kakao.com/_xdGyzxj" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
                   Kakao 상담 (안양)
                 </a>
               </li>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <span>010-5934-0012</span>
               </li>
               <li>
-                <a href="https://pf.kakao.com/_ukNrG" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
+                <a aria-label="신림점 카카오 상담 열기" href="https://pf.kakao.com/_ukNrG" target="_blank" rel="noopener noreferrer" className="text-xs font-medium tracking-widest uppercase text-[#bea396] hover:text-white transition-colors">
                   Kakao 상담 (신림)
                 </a>
               </li>

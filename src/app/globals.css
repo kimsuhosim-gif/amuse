@@ -123,6 +123,11 @@ body::after {
   mix-blend-mode: multiply;
 }
 
+.defer-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
 h1,
 h2,
 h3,
@@ -337,4 +342,10 @@ a:focus-visible,
 button:focus-visible {
   outline: 2px solid #7a563d;
   outline-offset: 3px;
+}
+
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  body::after {
+    display: none;
+  }
 }
