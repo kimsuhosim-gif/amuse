@@ -57,7 +57,7 @@ export default function About() {
             transition={{ duration: 1, delay: 0.2 }}
             className="max-w-md text-sm font-light leading-relaxed text-zinc-600 md:text-base"
           >
-            아뮤즈 에어리얼 스튜디오는 완벽한 자세를 강요하기보다, 당신만의 호흡과 속도로 나아갈 수 있는 가장 안전하고 아름다운 안식처를 제공합니다.
+            아뮤즈 플라잉요가 스튜디오는 완벽한 자세를 강요하기보다, 당신만의 호흡과 속도로 나아갈 수 있는 가장 안전하고 아름다운 안식처를 제공합니다.
           </motion.p>
         </div>
 

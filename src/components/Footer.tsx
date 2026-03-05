@@ -12,7 +12,7 @@ export default function Footer() {
             <h2 className="font-display text-4xl text-white">AMUSE.</h2>
             <p className="text-sm font-light leading-relaxed text-zinc-500 max-w-xs">
               A space where body and mind smile.<br />
-              아뮤즈 폴댄스 & 에어리얼 요가 스튜디오.
+              아뮤즈 폴댄스 & 플라잉요가 스튜디오.
             </p>
             <div className="flex items-center gap-4 mt-2">
               <a href="https://www.instagram.com/amuse_aerial_studio/" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-white transition-colors">
