@@ -9,11 +9,11 @@ import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "PHILOSOPHY", href: "#about" },
-  { label: "PROGRAMS", href: "#programs" },
-  { label: "STUDIOS", href: "#studios" },
-  { label: "INSTRUCTORS", href: "#instructors" },
-  { label: "REVIEWS", href: "#reviews" },
+  { label: "브랜드 철학", href: "#about" },
+  { label: "프로그램", href: "#programs" },
+  { label: "지점 안내", href: "#studios" },
+  { label: "강사진", href: "#instructors" },
+  { label: "후기", href: "#reviews" },
 ];
 
 export default function Navbar() {
@@ -60,7 +60,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-[10px] uppercase tracking-[0.2em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"
+              className={`text-[12px] font-medium tracking-[0.02em] transition-colors ${isScrolled ? "text-zinc-500 hover:text-zinc-900" : "text-white/70 hover:text-white"
                 }`}
             >
               {item.label}
@@ -146,31 +146,10 @@ export default function Navbar() {
                     className="flex items-baseline gap-4"
                   >
                     <span className="text-[10px] font-bold text-[#bea396]">0{idx + 1}</span>
-                    <span className="font-display text-4xl text-zinc-900 tracking-tight">{item.label}</span>
+                    <span className="font-sans text-[2rem] font-bold text-zinc-900 tracking-[-0.01em]">{item.label}</span>
                   </motion.div>
                 </Link>
               ))}
-
-              <div className="mt-8 grid grid-cols-2 gap-3">
-                <a
-                  href="https://map.naver.com/p/search/%EC%95%84%EB%AE%A4%EC%A6%88%ED%8F%B4%EB%8C%84%EC%8A%A4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="네이버 지도 체험예약 페이지 열기"
-                  className="flex items-center justify-center rounded-xl bg-zinc-900 py-5 text-[13px] font-bold text-white"
-                >
-                  체험예약
-                </a>
-                <a
-                  href="https://pf.kakao.com/_xdGyzxj"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="카카오 문의 채널 열기"
-                  className="flex items-center justify-center rounded-xl bg-[#fae100] py-5 text-[13px] font-bold text-[#371d1e]"
-                >
-                  카톡문의
-                </a>
-              </div>
             </div>
           </motion.div>
         )}
