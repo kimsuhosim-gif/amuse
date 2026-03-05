@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import { Plus, ArrowRight } from "lucide-react";
+import { Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqItems = [
@@ -56,25 +56,8 @@ export default function FAQ() {
             </h2>
 
             <p className="text-[15px] font-light leading-[1.8] text-zinc-500 mb-12 max-w-md">
-              처음 시작하시는 분들이 가장 많이 궁금해하시는 질문들을 모았습니다. 다른 궁금한 점이 있으시다면 언제든 편하게 문의해 주세요.
+              처음 시작하시는 분들이 가장 많이 궁금해하시는 질문들을 모았습니다.
             </p>
-
-            <div className="flex flex-col sm:flex-row lg:flex-col gap-4">
-              <a href="http://pf.kakao.com/_xnxnxn" target="_blank" rel="noopener noreferrer" className="group relative flex items-center justify-between px-6 py-4 bg-[#fdfbf9] rounded-2xl border border-zinc-100 overflow-hidden transition-all duration-500 hover:border-[#bea396]/30 hover:shadow-md hover:-translate-y-1">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" style={{ backgroundSize: '200% 100%' }}></div>
-                <span className="relative z-10 text-[13px] font-bold tracking-wider text-zinc-800">카카오톡 1:1 상담</span>
-                <div className="relative z-10 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm group-hover:bg-[#bea396] transition-colors duration-500">
-                  <ArrowRight size={14} className="text-zinc-400 group-hover:text-white transition-colors duration-500" />
-                </div>
-              </a>
-
-              <a href="https://booking.naver.com" target="_blank" rel="noopener noreferrer" className="group relative flex items-center justify-between px-6 py-4 bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden transition-all duration-500 hover:shadow-lg hover:-translate-y-1">
-                <span className="relative z-10 text-[13px] font-bold tracking-wider text-white">체험 수업 예약하기</span>
-                <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white transition-colors duration-500">
-                  <ArrowRight size={14} className="text-white group-hover:text-zinc-900 transition-colors duration-500" />
-                </div>
-              </a>
-            </div>
           </motion.div>
 
           {/* Accordion List */}
