@@ -2,7 +2,7 @@
 
 // file: src/components/Instructors.tsx
 import { motion } from "framer-motion";
-import { User2, MoveRight, Instagram } from "lucide-react";
+import { User2, Instagram } from "lucide-react";
 import Image from "next/image";
 
 const instructors = {
@@ -92,7 +92,17 @@ const instructors = {
     ],
 };
 
-const InstructorCard = ({ info, index }: { info: any, index: number }) => (
+type Instructor = {
+    name: string;
+    role: string;
+    image?: string;
+    quote: string;
+    history: string[];
+    tags: string;
+    insta: string;
+};
+
+const InstructorCard = ({ info, index }: { info: Instructor, index: number }) => (
     <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -119,7 +129,7 @@ const InstructorCard = ({ info, index }: { info: any, index: number }) => (
 
         <div className="z-10 bg-[#fdfbf9] rounded-xl p-5 border border-zinc-100 flex-1 flex flex-col transition-colors duration-500 group-hover:bg-white group-hover:border-[#bea396]/20">
             <p className="text-[13px] md:text-sm font-medium text-zinc-800 whitespace-pre-wrap leading-relaxed italic mb-5">
-                '{info.quote}'
+                &ldquo;{info.quote}&rdquo;
             </p>
             <ul className="text-[11px] md:text-xs font-light text-zinc-500 space-y-2 mb-6 opacity-90 group-hover:opacity-100 transition-opacity duration-500 flex-1">
                 {info.history.map((item: string, i: number) => (
