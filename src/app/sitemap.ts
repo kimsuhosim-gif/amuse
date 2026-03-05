@@ -1,9 +1,9 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://amuse-alpha.vercel.app";
+  const baseUrl = "https://amuse-aerial.vercel.app";
 
   return [
     {
@@ -14,3 +14,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

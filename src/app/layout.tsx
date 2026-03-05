@@ -10,7 +10,7 @@ const display = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://amuse-alpha.vercel.app"),
+  metadataBase: new URL("https://amuse-aerial.vercel.app"),
   title: {
     default: "아뮤즈 에어리얼 스튜디오 | 신림·안양 폴댄스 & 플라잉요가",
     template: "%s | AMUSE Aerial Studio",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://amuse-alpha.vercel.app",
+    url: "https://amuse-aerial.vercel.app",
     siteName: "AMUSE Aerial Studio",
     title: "아뮤즈 에어리얼 스튜디오 | 신림·안양 폴댄스 & 플라잉요가",
     description:
@@ -57,4 +57,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

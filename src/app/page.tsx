@@ -17,9 +17,9 @@ const localBusinessJsonLd = {
   "@graph": [
     {
       "@type": "SportsActivityLocation",
-      "@id": "https://amuse-alpha.vercel.app/#anyang",
+      "@id": "https://amuse-aerial.vercel.app/#anyang",
       "name": "아뮤즈 에어리얼 스튜디오 안양점",
-      "image": "https://amuse-alpha.vercel.app/images/anyang.jpg",
+      "image": "https://amuse-aerial.vercel.app/images/anyang.jpg",
       "telephone": "031-464-0101",
       "address": {
         "@type": "PostalAddress",
@@ -30,9 +30,9 @@ const localBusinessJsonLd = {
     },
     {
       "@type": "SportsActivityLocation",
-      "@id": "https://amuse-alpha.vercel.app/#sillim",
+      "@id": "https://amuse-aerial.vercel.app/#sillim",
       "name": "아뮤즈 에어리얼 스튜디오 신림점",
-      "image": "https://amuse-alpha.vercel.app/images/sillim.jpg",
+      "image": "https://amuse-aerial.vercel.app/images/sillim.jpg",
       "telephone": "010-5934-0012",
       "address": {
         "@type": "PostalAddress",
@@ -85,4 +85,5 @@ export default function Home() {
     </main>
   );
 }
+
 
