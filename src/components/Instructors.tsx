@@ -58,6 +58,21 @@ const instructors = {
             tags: "#ISFP #유현T #아뮤즈힘문어",
             insta: "@POLE_YUHYUN",
         },
+        {
+            name: "강미현 (MI HYUN)",
+            role: "안양점 강사",
+            image: "/images/instructors/mihyun.jpg",
+            quote: "폴 위에서 아름다운 나를 만나는\n순간을 함께합니다",
+            history: [
+                "2022 KBPF 전문가 2급 수료",
+                "2023 KBPF 전문가 1급 수료",
+                "2023 현 오하운 폴댄스 보라매점 강사",
+                "2026 더올바른필라테스 자격증 취득",
+                "2026 대한운동중재전문가협회 키즈필라테스/측만체형 기능운동 지도사 자격 취득",
+            ],
+            tags: "#INFP #미현T #물흐르듯",
+            insta: "@HYUNI__KKANG",
+        },
     ],
     sillim: [
         {
