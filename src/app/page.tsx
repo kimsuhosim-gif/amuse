@@ -9,6 +9,7 @@ import Review from "@/components/Review";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
+import PremiumEffects from "@/components/PremiumEffects";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <FAQ />
       <Footer />
       <MobileCTA />
+      <PremiumEffects />
     </main>
   );
 }
