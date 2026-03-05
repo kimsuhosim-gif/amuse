@@ -35,21 +35,20 @@ export default function About() {
 
   return (
     <section id="about" className="relative bg-[#fdfbf9] py-20 md:py-40" aria-label="필로소피">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_8%_12%,rgba(190,163,150,0.11),transparent_35%),radial-gradient(circle_at_86%_20%,rgba(190,163,150,0.08),transparent_28%)]" />
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 mb-12 md:mb-32">
+        <div className="relative z-10 mb-14 flex flex-col justify-between gap-8 md:mb-24 md:flex-row md:items-end">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="md:max-w-2xl"
+            className="md:max-w-3xl"
           >
             <p className="section-eyebrow mb-5">Philosophy</p>
             <h2 className="section-title">
-              몸과 마음이 편안해지는
-              <br className="hidden md:block" />
-              아뮤즈의 클래스
+              몸과 마음이 편안해지는 아뮤즈의 클래스
             </h2>
           </motion.div>
           <motion.p
@@ -57,14 +56,14 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="section-lead max-w-md"
+            className="section-lead max-w-md rounded-2xl border border-[#e5d7cb] bg-white/70 px-5 py-5 shadow-[0_16px_30px_-24px_rgba(68,52,36,0.3)]"
           >
             아뮤즈 폴댄스&플라잉요가는 완벽한 자세를 강요하기보다, 당신만의 호흡과 속도로 나아갈 수 있는 가장 안전하고 아름다운 안식처를 제공합니다.
           </motion.p>
         </div>
 
         {/* Philosophy Grid */}
-        <div className="grid gap-x-8 gap-y-10 mt-12 md:grid-cols-3">
+        <div className="relative z-10 mt-10 grid gap-5 md:grid-cols-3 md:gap-7">
           {philosophyItems.map((item, i) => (
             <motion.article
               key={i}
@@ -72,12 +71,15 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.15 + 0.2 }}
-              className="group flex flex-col items-start"
+              className="group flex flex-col rounded-3xl border border-[#e7dbd2] bg-white/78 p-6 shadow-[0_18px_34px_-30px_rgba(60,44,29,0.38)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#ceb7a8] hover:shadow-[0_20px_42px_-28px_rgba(74,54,37,0.42)] md:p-8"
             >
-              <div className="h-[1px] w-full bg-zinc-200 mb-8 transition-colors duration-500 group-hover:bg-[#bea396] scale-x-0 group-hover:scale-x-100 origin-left" style={{ transform: "scaleX(1)" }} />
-              <h3 className="font-display text-[1.7rem] text-zinc-900 mb-2 leading-[1.2]">{item.title}</h3>
-              <p className="text-[12px] font-medium tracking-wide text-zinc-500 mb-6">{item.subtitle}</p>
-              <p className="text-sm font-light leading-relaxed text-zinc-600">
+              <div className="mb-5 flex items-center justify-between">
+                <span className="text-[11px] font-semibold tracking-[0.15em] text-[#b29384]">0{i + 1}</span>
+                <span className="h-[1px] w-16 bg-[#d9c7ba] transition-all duration-500 group-hover:w-24" />
+              </div>
+              <h3 className="mb-2 font-display text-[1.54rem] leading-[1.25] text-zinc-900">{item.title}</h3>
+              <p className="mb-5 text-[11px] font-semibold tracking-[0.08em] text-[#8f7e73]">{item.subtitle}</p>
+              <p className="text-[0.95rem] leading-[1.78] font-light text-zinc-600">
                 {item.description}
               </p>
             </motion.article>
@@ -85,7 +87,7 @@ export default function About() {
         </div>
 
         {/* Large Decorative Image Area */}
-        <div ref={containerRef} className="mt-32 relative w-full overflow-hidden aspect-[16/9] md:aspect-[21/9]">
+        <div ref={containerRef} className="relative z-10 mt-20 w-full overflow-hidden rounded-[2.2rem] aspect-[16/9] md:mt-24 md:aspect-[21/9]">
           <motion.div
             style={{ y }}
             className="absolute inset-x-0 -inset-y-[15%] w-full h-[130%]"

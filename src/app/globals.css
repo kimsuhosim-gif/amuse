@@ -91,6 +91,7 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --font-display: var(--font-display), serif;
+  --font-kor-display: var(--font-kor-display), serif;
   --font-sans: "A2Z", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -163,9 +164,11 @@ h6,
 }
 
 .section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.05rem, 5.7vw, 4.4rem);
-  line-height: 1.14;
+  font-family: var(--font-kor-display), var(--font-display), serif;
+  font-size: clamp(1.68rem, 4.9vw, 4.05rem);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
   color: #1e1c1a;
 }
 

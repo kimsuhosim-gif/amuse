@@ -1,11 +1,18 @@
 ﻿import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Noto_Serif_KR, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const display = Playfair_Display({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
   variable: "--font-display",
+  display: "swap",
+});
+
+const koreanDisplay = Noto_Serif_KR({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-kor-display",
   display: "swap",
 });
 
@@ -52,10 +59,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${display.variable}`}>
+    <html lang="ko" className={`${display.variable} ${koreanDisplay.variable}`}>
       <body className="bg-white text-zinc-900 antialiased">{children}</body>
     </html>
   );
 }
-
-

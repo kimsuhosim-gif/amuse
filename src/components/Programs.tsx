@@ -35,7 +35,7 @@ export default function Programs() {
                     <p className="section-eyebrow mb-5">Programs</p>
                     <h2 className="section-title">
                         나에게 맞는 방식으로
-                        <br />
+                        <br className="hidden md:block" />
                         시작하는 에어리얼 클래스
                     </h2>
                 </motion.div>

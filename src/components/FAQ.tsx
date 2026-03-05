@@ -53,7 +53,7 @@ export default function FAQ() {
 
             <h2 className="section-title mb-6">
               시작 전 가장 많이 묻는
-              <br />
+              <br className="hidden md:block" />
               <span className="text-[#bea396] italic font-light">핵심 질문</span>
             </h2>
 
