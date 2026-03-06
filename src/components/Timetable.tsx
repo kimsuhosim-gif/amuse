@@ -252,7 +252,7 @@ export default function Studios() {
                     {!scheduleImageError ? (
                       <div className="relative overflow-hidden rounded-xl border border-zinc-700/70">
                         <Image
-                          src="/images/schedule-board.jpg"
+                          src="/images/시간표_2월.png"
                           alt="안양점과 신림점 통합 시간표 이미지"
                           width={1200}
                           height={1600}
@@ -264,7 +264,7 @@ export default function Studios() {
                       <div className="rounded-xl border border-dashed border-zinc-700 bg-zinc-900/35 px-4 py-10 text-center">
                         <p className="text-sm text-zinc-300">시간표 이미지 파일을 찾지 못했습니다.</p>
                         <p className="mt-2 text-xs text-zinc-500">
-                          `/public/images/schedule-board.jpg` 파일을 추가하면 이 영역에 바로 표시됩니다.
+                          `/public/images/시간표_2월.png` 파일을 추가하면 이 영역에 바로 표시됩니다.
                         </p>
                       </div>
                     )}
