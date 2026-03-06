@@ -96,6 +96,22 @@ const instructors: Record<"anyang" | "sillim", Instructor[]> = {
   ],
   sillim: [
     {
+      name: "이미연 (YONI)",
+      role: "신림점 강사",
+      image: "/images/instructors/yoni.jpg",
+      gallery: ["/images/instructors/yoni.jpg", "/images/instructors/yoni_2.jpg"],
+      quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
+      history: [
+        "2021 폴댄스 전문가 3급 + 2급",
+        "2021 폴댄스 지도자 수료",
+        "2024 필라테스 지도자 수료",
+        "2021 온폴댄스 잠실새내점 강사",
+        "2023 현 아뮤즈 폴댄스 & 플라잉요가 스튜디오 강사",
+      ],
+      tags: "#INFJ #요니T #친절퀸",
+      insta: "@AMUSE_MIYEON",
+    },
+    {
       name: "김서안 (SEOAN)",
       role: "신림점 원장",
       image: "/images/instructors/seo_an.jpg",
@@ -189,6 +205,7 @@ function InstructorCard({
 }
 
 export default function Instructors() {
+  const [activeStudio, setActiveStudio] = useState<"anyang" | "sillim">("anyang");
   const [selectedInstructor, setSelectedInstructor] = useState<Instructor | null>(null);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
@@ -254,30 +271,39 @@ export default function Instructors() {
             </p>
           </motion.div>
 
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <div className="mb-8 flex items-center gap-4">
-                <h3 className="font-sans text-2xl font-extrabold tracking-tight text-zinc-800">안양 본점</h3>
-                <div className="h-[1px] flex-1 bg-zinc-200" />
-              </div>
-              <div className="flex flex-col gap-6">
-                {instructors.anyang.map((instructor, index) => (
-                  <InstructorCard key={`anyang-${index}`} info={instructor} index={index} onOpenGallery={openGallery} />
-                ))}
-              </div>
-            </div>
+          <div className="mb-8 flex items-center gap-2 rounded-xl border border-zinc-200 bg-white p-1 sm:w-fit">
+            <button
+              type="button"
+              onClick={() => setActiveStudio("anyang")}
+              className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${activeStudio === "anyang" ? "bg-zinc-900 text-white" : "text-zinc-500 hover:text-zinc-800"}`}
+            >
+              안양 본점
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveStudio("sillim")}
+              className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${activeStudio === "sillim" ? "bg-zinc-900 text-white" : "text-zinc-500 hover:text-zinc-800"}`}
+            >
+              신림 2호점
+            </button>
+          </div>
 
-            <div>
-              <div className="mb-8 flex items-center gap-4">
-                <h3 className="font-sans text-2xl font-extrabold tracking-tight text-zinc-800">신림 2호점</h3>
-                <div className="h-[1px] flex-1 bg-zinc-200" />
-              </div>
-              <div className="flex flex-col gap-6">
-                {instructors.sillim.map((instructor, index) => (
-                  <InstructorCard key={`sillim-${index}`} info={instructor} index={index} onOpenGallery={openGallery} />
-                ))}
-              </div>
-            </div>
+          <div className="mb-8 flex items-center gap-4">
+            <h3 className="font-sans text-2xl font-extrabold tracking-tight text-zinc-800">
+              {activeStudio === "anyang" ? "안양 본점 강사진" : "신림 2호점 강사진"}
+            </h3>
+            <div className="h-[1px] flex-1 bg-zinc-200" />
+          </div>
+
+          <div className="flex flex-col gap-6">
+            {instructors[activeStudio].map((instructor, index) => (
+              <InstructorCard
+                key={`${activeStudio}-${instructor.name}-${index}`}
+                info={instructor}
+                index={index}
+                onOpenGallery={openGallery}
+              />
+            ))}
           </div>
         </div>
       </section>
