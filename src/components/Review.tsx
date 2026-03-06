@@ -60,7 +60,7 @@ export default function Review() {
             </div>
             <h2 className="section-title">
               회원님들이 직접 남긴
-              <br className="hidden md:block" />
+              <br className="block md:hidden" />
               <span className="text-[#bea396] italic font-light">진짜 수강 후기</span>
             </h2>
           </motion.div>

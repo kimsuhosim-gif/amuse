@@ -1,5 +1,6 @@
 ﻿import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import BranchQuickEntry from "@/components/BranchQuickEntry";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
 import Programs from "@/components/Programs";
@@ -54,6 +55,7 @@ export default function Home() {
       />
       <Navbar />
       <Hero />
+      <BranchQuickEntry />
       <div className="defer-section">
         <Marquee />
       </div>
