@@ -2,24 +2,17 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Clock3, ExternalLink, MapPin, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   branchInfo,
-  DAYS,
-  timetableData,
   type BranchId,
-  type DayOfWeek,
 } from "@/data/timetable";
 
 export default function Studios() {
   const [activeBranch, setActiveBranch] = useState<BranchId>("anyang");
-  const [activeDay, setActiveDay] = useState<DayOfWeek>("MON");
-  const [scheduleView, setScheduleView] = useState<"interactive" | "image">("interactive");
   const [scheduleImageError, setScheduleImageError] = useState(false);
-
-  const activeSchedule = useMemo(() => timetableData[activeBranch][activeDay], [activeBranch, activeDay]);
   const info = branchInfo[activeBranch];
 
   const handleBranchChange = (branch: BranchId) => {
@@ -179,97 +172,27 @@ export default function Studios() {
                   <p className="text-[11px] font-bold uppercase tracking-widest text-zinc-400">Class Schedule</p>
                   <span className="text-[10px] font-semibold uppercase tracking-widest text-[#bea396] bg-[#bea396]/10 px-3 py-1.5 rounded-full">2026. 02</span>
                 </div>
-                <div className="mb-6 flex gap-2 rounded-xl border border-zinc-800 bg-zinc-900/40 p-1">
-                  <button
-                    type="button"
-                    onClick={() => setScheduleView("interactive")}
-                    className={`flex-1 rounded-lg px-3 py-2 text-[11px] font-semibold tracking-[0.06em] transition-colors ${scheduleView === "interactive" ? "bg-white text-zinc-900" : "text-zinc-400 hover:text-zinc-200"}`}
-                  >
-                    인터랙티브 보기
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setScheduleView("image")}
-                    className={`flex-1 rounded-lg px-3 py-2 text-[11px] font-semibold tracking-[0.06em] transition-colors ${scheduleView === "image" ? "bg-white text-zinc-900" : "text-zinc-400 hover:text-zinc-200"}`}
-                  >
-                    이미지로 보기
-                  </button>
+                <div className="rounded-2xl border border-zinc-800/70 bg-zinc-900/30 p-3">
+                  {!scheduleImageError ? (
+                    <div className="relative overflow-hidden rounded-xl border border-zinc-700/70">
+                      <Image
+                        src="/images/시간표_2월.png"
+                        alt="안양점과 신림점 통합 시간표 이미지"
+                        width={1200}
+                        height={1600}
+                        className="h-auto w-full object-contain"
+                        onError={() => setScheduleImageError(true)}
+                      />
+                    </div>
+                  ) : (
+                    <div className="rounded-xl border border-dashed border-zinc-700 bg-zinc-900/35 px-4 py-10 text-center">
+                      <p className="text-sm text-zinc-300">시간표 이미지 파일을 찾지 못했습니다.</p>
+                      <p className="mt-2 text-xs text-zinc-500">
+                        `/public/images/시간표_2월.png` 파일을 추가하면 이 영역에 바로 표시됩니다.
+                      </p>
+                    </div>
+                  )}
                 </div>
-
-                {scheduleView === "interactive" ? (
-                  <>
-                    <div className="flex gap-2 overflow-x-auto pb-6 mb-2 scrollbar-hide snap-x">
-                      {DAYS.map((day) => (
-                        <button
-                          key={day}
-                          onClick={() => setActiveDay(day)}
-                          className={`snap-center flex-1 shrink-0 px-4 py-3 text-[11px] font-bold tracking-widest transition-all duration-300 rounded-xl focus:outline-none ${activeDay === day
-                            ? "bg-white text-zinc-900 shadow-[0_0_20px_rgba(255,255,255,0.15)]"
-                            : "bg-zinc-800/30 text-zinc-500 border border-zinc-800 hover:text-zinc-300 hover:border-zinc-700"
-                            }`}
-                        >
-                          {day}
-                        </button>
-                      ))}
-                    </div>
-
-                    <div className="flex flex-col min-h-[300px]">
-                      <AnimatePresence mode="wait">
-                        <motion.div
-                          key={activeBranch + activeDay}
-                          initial={{ opacity: 0, y: 15 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -15 }}
-                          transition={{ duration: 0.4 }}
-                          className="flex flex-col gap-3"
-                        >
-                          {activeSchedule?.length > 0 ? (
-                            activeSchedule.map((item, idx) => (
-                              <div key={idx} className="flex flex-col sm:flex-row sm:items-center justify-between bg-zinc-900/40 border border-zinc-800/50 rounded-2xl p-4 sm:p-5 group hover:bg-zinc-800/60 hover:border-zinc-700 transition-all duration-400 gap-y-3 sm:gap-y-0 w-full">
-                                <div className="flex items-center gap-3 sm:gap-6">
-                                  <span className="font-display text-xl sm:text-2xl text-[#bea396]/80 group-hover:text-[#bea396] transition-colors">{item.time}</span>
-                                  <div className="w-[1px] h-6 sm:h-8 bg-zinc-800 hidden sm:block"></div>
-                                  <span className="text-[14px] sm:text-[15px] font-bold text-zinc-300 group-hover:text-white transition-colors break-words max-w-[200px] sm:max-w-none line-clamp-2">{item.name}</span>
-                                </div>
-                                {item.level && (
-                                  <span className="self-start sm:self-auto text-[10px] sm:text-[11px] font-semibold px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg bg-zinc-800/50 text-zinc-400 group-hover:bg-[#bea396]/10 group-hover:text-[#bea396] border border-zinc-800/50 transition-colors block text-center break-words max-w-[150px] sm:max-w-[200px]">
-                                    {item.level}
-                                  </span>
-                                )}
-                              </div>
-                            ))
-                          ) : (
-                            <div className="flex items-center justify-center py-24 text-sm font-light text-zinc-600 bg-zinc-900/20 rounded-2xl border border-zinc-800/30 border-dashed">
-                              해당 요일은 대관 및 휴무입니다.
-                            </div>
-                          )}
-                        </motion.div>
-                      </AnimatePresence>
-                    </div>
-                  </>
-                ) : (
-                  <div className="rounded-2xl border border-zinc-800/70 bg-zinc-900/30 p-3">
-                    {!scheduleImageError ? (
-                      <div className="relative overflow-hidden rounded-xl border border-zinc-700/70">
-                        <Image
-                          src="/images/시간표_2월.png"
-                          alt="안양점과 신림점 통합 시간표 이미지"
-                          width={1200}
-                          height={1600}
-                          className="h-auto w-full object-contain"
-                          onError={() => setScheduleImageError(true)}
-                        />
-                      </div>
-                    ) : (
-                      <div className="rounded-xl border border-dashed border-zinc-700 bg-zinc-900/35 px-4 py-10 text-center">
-                        <p className="text-sm text-zinc-300">시간표 이미지 파일을 찾지 못했습니다.</p>
-                        <p className="mt-2 text-xs text-zinc-500">
-                          `/public/images/시간표_2월.png` 파일을 추가하면 이 영역에 바로 표시됩니다.
-                        </p>
-                      </div>
-                    )}
-                  </div>
-                )}
 
                 <p className="mt-8 text-[11px] font-light text-zinc-500 leading-relaxed bg-zinc-900/30 p-4 rounded-xl border border-zinc-800/30">
                   <strong className="font-semibold text-zinc-400">안내사항</strong><br />
