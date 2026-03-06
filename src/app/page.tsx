@@ -10,6 +10,7 @@ import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
 import PremiumEffects from "@/components/PremiumEffects";
+import FixedQuickActions from "@/components/FixedQuickActions";
 import Script from "next/script";
 
 const localBusinessJsonLd = {
@@ -76,6 +77,7 @@ export default function Home() {
       <div className="defer-section">
         <Footer />
       </div>
+      <FixedQuickActions />
       <MobileCTA />
       <PremiumEffects />
     </main>

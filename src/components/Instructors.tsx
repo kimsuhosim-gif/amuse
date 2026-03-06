@@ -96,22 +96,6 @@ const instructors: Record<"anyang" | "sillim", Instructor[]> = {
   ],
   sillim: [
     {
-      name: "이미연 (YONI)",
-      role: "신림점 강사",
-      image: "/images/instructors/yoni.jpg",
-      gallery: ["/images/instructors/yoni.jpg", "/images/instructors/yoni_2.jpg"],
-      quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
-      history: [
-        "2021 폴댄스 전문가 3급 + 2급",
-        "2021 폴댄스 지도자 수료",
-        "2024 필라테스 지도자 수료",
-        "2021 온폴댄스 잠실새내점 강사",
-        "2023 현 아뮤즈 폴댄스 & 플라잉요가 스튜디오 강사",
-      ],
-      tags: "#INFJ #요니T #친절퀸",
-      insta: "@AMUSE_MIYEON",
-    },
-    {
       name: "김서안 (SEOAN)",
       role: "신림점 원장",
       image: "/images/instructors/seo_an.jpg",
@@ -130,6 +114,22 @@ const instructors: Record<"anyang" | "sillim", Instructor[]> = {
       ],
       tags: "#ENFJ #서안T #디테일 #우아함 #폴아트",
       insta: "@SEOAN_POLE",
+    },
+    {
+      name: "이미연 (YONI)",
+      role: "신림점 강사",
+      image: "/images/instructors/yoni.jpg",
+      gallery: ["/images/instructors/yoni.jpg", "/images/instructors/yoni_2.jpg"],
+      quote: "친절하고 명확한 리더쉽으로\n에너지를 전하는 강사입니다",
+      history: [
+        "2021 폴댄스 전문가 3급 + 2급",
+        "2021 폴댄스 지도자 수료",
+        "2024 필라테스 지도자 수료",
+        "2021 온폴댄스 잠실새내점 강사",
+        "2023 현 아뮤즈 폴댄스 & 플라잉요가 스튜디오 강사",
+      ],
+      tags: "#INFJ #요니T #친절퀸",
+      insta: "@AMUSE_MIYEON",
     },
   ],
 };
