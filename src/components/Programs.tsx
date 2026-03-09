@@ -10,15 +10,25 @@ const programs = [
         title: "Pole Dance",
         kicker: "01",
         desc: "코어 근력과 유연성을 동시에 기르며 하나의 아름다운 작품을 만들어내는 에어리얼 아트.",
-        img: "/images/pole.jpg"
+        img: "/images/pole.jpg",
+        branches: ["안양점", "신림점"]
     },
     {
         id: "flying",
         title: "Flying Yoga",
         kicker: "02",
         desc: "부드러운 해먹에 몸을 맡겨 신체의 정렬을 맞추고 깊은 이완과 근력 강화를 동시에 이룹니다.",
-        img: "/images/flying.jpg"
-    }
+        img: "/images/flying.jpg",
+        branches: ["안양점", "신림점"]
+    },
+    {
+        id: "yoga",
+        title: "Yoga",
+        kicker: "03",
+        desc: "인체 해부학적인 아헹가 요가의 바탕 위에서 몸과 마음의 올바른 길을 안내하고 일상의 평온과 건강을 추구합니다.",
+        img: "/images/yoga.jpg",
+        branches: ["신림점"]
+    },
 ];
 
 export default function Programs() {
@@ -40,8 +50,7 @@ export default function Programs() {
                     </h2>
                 </motion.div>
 
-                {/* Changed md:grid-cols-3 to md:grid-cols-2 and centered taking max width */}
-                <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 md:gap-16">
+                <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 xl:grid-cols-3 md:gap-12">
                     {programs.map((prog, i) => (
                         <motion.div
                             key={prog.id}
@@ -68,6 +77,16 @@ export default function Programs() {
                             <p className="text-sm font-light leading-relaxed text-zinc-500 mb-6 flex-1">
                                 {prog.desc}
                             </p>
+                            <div className="mt-auto flex flex-wrap gap-2">
+                                {prog.branches.map((branch) => (
+                                    <span
+                                        key={`${prog.id}-${branch}`}
+                                        className="rounded-full border border-[#d9c9bd] bg-[#fbf7f4] px-3 py-1 text-[11px] font-semibold text-[#8d6f5f]"
+                                    >
+                                        {branch}
+                                    </span>
+                                ))}
+                            </div>
                         </motion.div>
                     ))}
                 </div>
