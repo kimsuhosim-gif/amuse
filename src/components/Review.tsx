@@ -40,7 +40,7 @@ const reviews = [
 
 export default function Review() {
   return (
-    <section id="reviews" className="bg-[#f6f4f1] py-20 md:py-40 relative overflow-hidden" aria-label="회원 리뷰">
+    <section id="reviews" className="bg-tier-1 py-20 md:py-40 relative overflow-hidden" aria-label="회원 리뷰">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#bea396]/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
 
@@ -74,7 +74,7 @@ export default function Review() {
             className="flex w-full lg:w-auto flex-col gap-5 sm:flex-row lg:flex-col lg:items-end"
           >
             {reviewStats.map((stat) => (
-              <div key={stat.branch} className="flex flex-col bg-white/60 backdrop-blur-md px-7 py-5 rounded-2xl border border-white shadow-sm w-full sm:w-1/2 lg:w-[320px]">
+              <div key={stat.branch} className="panel flex w-full flex-col rounded-2xl px-7 py-5 sm:w-1/2 lg:w-[320px]">
                 <span className="font-sans font-extrabold text-xl text-zinc-800 mb-1.5 tracking-tight">{stat.branch}</span>
                 <span className="text-[13px] font-medium text-zinc-500">{stat.info}</span>
               </div>
@@ -109,7 +109,7 @@ export default function Review() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.15 + 0.2 }}
-              className="group relative flex flex-col justify-between bg-white rounded-[2rem] p-8 md:p-10 border border-zinc-100 shadow-[0_8px_30px_-15px_rgba(0,0,0,0.04)] transition-all duration-500 hover:shadow-[0_20px_40px_-20px_rgba(171,152,133,0.3)] hover:-translate-y-2 overflow-hidden"
+              className="panel group relative flex flex-col justify-between overflow-hidden rounded-[2rem] p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[var(--elev-2)] md:p-10"
             >
               {/* Subtle top gradient line */}
               <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#bea396]/60 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
@@ -124,7 +124,7 @@ export default function Review() {
                   <Quote size={40} strokeWidth={1} className="text-[#f0eae3] -mt-2 -mr-2 transition-all duration-500 group-hover:text-[#bea396]/20 group-hover:scale-110" />
                 </div>
 
-                <p className="text-[15px] font-light leading-[1.8] text-zinc-700 mb-12 relative">
+                <p className="relative mb-12 text-[15px] font-normal leading-[1.8] text-zinc-700">
                   {review.text}
                 </p>
               </div>

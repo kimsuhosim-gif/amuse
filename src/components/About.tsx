@@ -34,7 +34,7 @@ export default function About() {
   const y = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
   return (
-    <section id="about" className="relative bg-[#fdfbf9] py-20 md:py-40" aria-label="필로소피">
+    <section id="about" className="bg-tier-1 relative py-20 md:py-40" aria-label="필로소피">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_8%_12%,rgba(190,163,150,0.11),transparent_35%),radial-gradient(circle_at_86%_20%,rgba(190,163,150,0.08),transparent_28%)]" />
       <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
         {/* Section Header */}
@@ -56,7 +56,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="section-lead max-w-md rounded-2xl border border-[#e5d7cb] bg-white/70 px-5 py-5 shadow-[0_16px_30px_-24px_rgba(68,52,36,0.3)]"
+            className="section-lead panel max-w-md rounded-2xl px-5 py-5"
           >
             아뮤즈 폴댄스&플라잉요가는 완벽한 자세를 강요하기보다, 당신만의 호흡과 속도로 나아갈 수 있는 가장 안전하고 아름다운 안식처를 제공합니다.
           </motion.p>
@@ -71,7 +71,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.8, delay: i * 0.15 + 0.2 }}
-              className="group flex flex-col rounded-3xl border border-[#e7dbd2] bg-white/78 p-6 shadow-[0_18px_34px_-30px_rgba(60,44,29,0.38)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#ceb7a8] hover:shadow-[0_20px_42px_-28px_rgba(74,54,37,0.42)] md:p-8"
+              className="panel group flex flex-col rounded-3xl p-6 transition-all duration-500 hover:-translate-y-1 hover:border-[#ceb7a8] hover:shadow-[var(--elev-2)] md:p-8"
             >
               <div className="mb-5 flex items-center justify-between">
                 <span className="text-[11px] font-semibold tracking-[0.15em] text-[#b29384]">0{i + 1}</span>

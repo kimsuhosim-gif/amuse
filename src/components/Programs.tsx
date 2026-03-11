@@ -33,7 +33,7 @@ const programs = [
 
 export default function Programs() {
     return (
-        <section id="programs" className="bg-white py-20 md:py-40">
+        <section id="programs" className="bg-tier-2 py-20 md:py-40">
             <div className="mx-auto w-full max-w-[85rem] px-6 lg:px-12">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -58,9 +58,9 @@ export default function Programs() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.8, delay: i * 0.2 }}
-                            className="group cursor-pointer flex flex-col"
+                            className="group flex cursor-pointer flex-col"
                         >
-                            <div className="relative aspect-[4/5] w-full overflow-hidden mb-8 rounded-[2rem] border border-zinc-100/50 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]">
+                            <div className="panel relative mb-8 aspect-[4/5] w-full overflow-hidden rounded-[2rem]">
                                 <Image
                                     src={prog.img}
                                     alt={prog.title}
@@ -72,9 +72,9 @@ export default function Programs() {
                             </div>
                             <div className="flex items-baseline gap-4 mb-4">
                                 <span className="text-[10px] uppercase tracking-widest text-zinc-400">{prog.kicker}</span>
-                                <h3 className="font-display text-3xl text-zinc-900">{prog.title}</h3>
+                                <h3 className="font-display text-3xl font-semibold text-zinc-900">{prog.title}</h3>
                             </div>
-                            <p className="text-sm font-light leading-relaxed text-zinc-500 mb-6 flex-1">
+                            <p className="mb-6 flex-1 text-[15px] font-normal leading-relaxed text-zinc-600">
                                 {prog.desc}
                             </p>
                             <div className="mt-auto flex flex-wrap gap-2">

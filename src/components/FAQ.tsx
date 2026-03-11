@@ -32,7 +32,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-white py-20 md:py-40 relative overflow-hidden" aria-label="자주 묻는 질문">
+    <section id="faq" className="bg-tier-2 py-20 md:py-40 relative overflow-hidden" aria-label="자주 묻는 질문">
       {/* Background Decor */}
       <div className="absolute left-0 bottom-0 w-[600px] h-[600px] bg-[#bea396]/5 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
 
@@ -57,7 +57,7 @@ export default function FAQ() {
               <span className="text-[#bea396] italic font-light">핵심 질문</span>
             </h2>
 
-            <p className="section-lead mb-10 max-w-md">
+            <p className="section-lead panel mb-10 max-w-md rounded-2xl px-5 py-4">
               처음 시작하시는 분들이 가장 많이 궁금해하시는 질문들을 모았습니다.
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ export default function FAQ() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className={`rounded-2xl border transition-all duration-500 overflow-hidden ${isOpen ? "bg-white border-[#bea396]/20 shadow-[0_10px_40px_-15px_rgba(171,152,133,0.15)]" : "bg-transparent border-zinc-100 hover:border-[#bea396]/20 hover:bg-[#fdfbf9]"
+                    className={`rounded-2xl border transition-all duration-500 overflow-hidden ${isOpen ? "bg-white border-[#bea396]/20 shadow-[var(--elev-1)]" : "bg-transparent border-zinc-100 hover:border-[#bea396]/20 hover:bg-[#fcfaf7]"
                       }`}
                   >
                     <button
@@ -104,7 +104,7 @@ export default function FAQ() {
                         >
                           <div className="px-6 pb-8 md:px-8 md:pl-[4.5rem] md:pb-10">
                             <div className="w-12 h-[1px] bg-zinc-100 mb-6"></div>
-                            <p className="text-[15px] font-light leading-[1.8] text-zinc-600">
+                            <p className="text-[15px] font-normal leading-[1.8] text-zinc-600">
                               {item.answer}
                             </p>
                           </div>
