@@ -21,14 +21,6 @@ const programs = [
         img: "/images/flying.jpg",
         branches: ["안양점", "신림점"]
     },
-    {
-        id: "yoga",
-        title: "Yoga",
-        kicker: "03",
-        desc: "인체 해부학적인 아헹가 요가의 바탕 위에서 몸과 마음의 올바른 길을 안내하고 일상의 평온과 건강을 추구합니다.",
-        img: "/images/yoga.jpg",
-        branches: ["신림점"]
-    },
 ];
 
 export default function Programs() {
@@ -50,7 +42,7 @@ export default function Programs() {
                     </h2>
                 </motion.div>
 
-                <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 xl:grid-cols-3 md:gap-12">
+                <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-2 md:gap-12">
                     {programs.map((prog, i) => (
                         <motion.div
                             key={prog.id}
